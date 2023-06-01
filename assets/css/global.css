@@ -1,0 +1,776 @@
+/* Font Import */
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: Montserratbold;
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserratextrabold;
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+.tdu {
+    text-decoration: underline;
+}
+
+input {
+    outline: none;
+}
+
+.btn-custom {
+    height: 48px;
+}
+
+/* Text Related Css */
+.ttu {
+    text-transform: uppercase;
+}
+
+/* Text Related Css */
+/* color css */
+.text-713EE4 {
+    color: #713EE4;
+}
+
+.text-3D3D3D {
+    color: #3D3D3D;
+}
+
+.bg-713EE4 {
+    background-color: #713EE4;
+}
+
+.bg-0ECCCA {
+    background: #0ECCCA;
+}
+
+.text-000 {
+    color: #000;
+}
+.nav-menu li a:hover {
+    color: #0ECCCA;
+    transition: .2s ease-in-out;
+}
+
+/* color css */
+* {
+    font-family: SourceSansPro-Regular;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: #F5F5F5;
+}
+
+.btn-custom {
+
+    border-radius: 4px;
+    padding: 0px 12px;
+}
+
+.extraBold {
+    font-family: Montserratextrabold;
+}
+
+.regular {
+    font-family: MontserratRegular;
+}
+
+.medium {
+    font-family: MontserratMedium;
+}
+
+.bold {
+    font-family: Montserratbold;
+}
+
+.light {
+    font-family: MontserratLight;
+}
+
+/* Font Import */
+
+/* Header Css */
+
+.header {
+    background: #EBEBEB;
+}
+
+.header .nav-link {
+    font-family: MontserratRegular;
+
+}
+
+.header * {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 79px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-item:nth-child(1) {
+    margin-left: 0;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Header Css */
+
+/* HOME PAGE CSS */
+.home-section-1 h1 {
+    font-size: 40px;
+    max-width: 759px;
+}
+
+.home-section-1 {
+    font-size: 40px;
+    padding: 0 90px;
+    margin-top: 59px;
+}
+
+.home-section-1 .h1-cirlce-yellow {
+    position: absolute;
+    left: -77px;
+    top: -78px;
+    z-index: -1;
+}
+
+.afterheadereclipse {
+    position: absolute;
+    right: 0;
+    text-align: 0;
+    top: -62px;
+    z-index: -1;
+}
+
+.home-section-2 {
+    margin-top: 59px;
+    background-image: url('../images/sec-2.png');
+    padding: 128px 47px 128px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-section-2 .home-section-2-inner {
+    background: #ffffffad;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 72px 53px;
+    max-width: 36%;
+}
+
+.home-section-2-inner img {
+    position: absolute;
+    right: -46px;
+    top: 16px;
+
+}
+
+.tt-input {
+    background: #FBFBFB;
+    border: 3px solid #f2f3f3;
+
+}
+
+.tt-input-height {
+    height: 59px;
+}
+
+.tt-input::placeholder {
+    color: #000;
+}
+
+.home-section-2-inner form {
+    margin-top: 59px;
+}
+
+.home-section-2-inner form button {
+    margin-top: 41px;
+}
+
+.home-section-2 .purple-eclipse {
+    position: absolute;
+    top: -100px;
+}
+
+.home-section-3 {
+    background: #0ECCCA;
+    padding: 85px 83px;
+    z-index: 1;
+}
+
+.home-section-3 .purple-eclipse-right {
+    right: 0;
+    position: absolute;
+    top: -70px;
+}
+
+.home-section-3 .invoice-finance-row {
+    margin-top: 86px;
+}
+
+.home-section-3 .btn-custom-eclipse {
+    position: absolute;
+    top: -65px;
+    right: -55px;
+    z-index: -1;
+}
+
+.home-section-3-row,
+.home-section-4-row {
+    margin-top: 54px;
+}
+
+.home-section-4-row .btn-custom-eclipse {
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    z-index: -1;
+}
+
+.home-benefits-p {
+    max-width: 842px;
+}
+
+.home-section-4 {
+    margin-top: 66px;
+    padding: 0 163px;
+}
+
+.home-section-4-cc img {
+    position: absolute;
+    top: 0px;
+    right: -55px;
+    z-index: -1;
+}
+
+.home-section-4-cc {
+    margin-top: 49px;
+}
+
+.home-section-4 .credit-left-circle {
+    position: absolute;
+    left: -118px;
+    top: -101px;
+    z-index: -1;
+}
+
+.home-section-5 {
+    padding: 0 207px 0 56px;
+}
+
+.home-section-5 {
+    margin-top: -108px;
+}
+
+.home-section-5 h5 {
+    margin: 102px 0;
+}
+
+.home-section-5 button img {
+    position: absolute;
+    top: -65px;
+    right: -55px;
+    z-index: -1;
+}
+
+.home-last-sec {
+    padding: 76px 83px;
+    background: linear-gradient(90deg, #0ECCCA 0%, #713EE4 100%);
+    margin-top: 92px;
+}
+
+.home-last-sec h5 {
+    max-width: 859px;
+    padding-top: 39px;
+}
+
+.logos-home-last-sec {
+    margin-top: 71px;
+}
+
+.home-last-sec .half-left-yellow {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+.home-last-sec .half-right-blue {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+
+.home-section-4 .credit-control-home {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.seamless-solution-col {
+    width: 57%;
+}
+
+.credit-control-left-col {
+    width: 47%;
+}
+
+.credit-control-right-col {
+    width: 53%;
+}
+
+.cash-flow-left-col {
+    width: 30%;
+    padding-right: 70px;
+}
+
+.cash-flow-right-col {
+    width: 70%;
+}
+
+/* HOME PAGE CSS */
+
+
+
+/* Footer */
+footer {
+    background: #EBEBEB;
+    padding: 43px 79px;
+}
+
+.footer-col-last {
+    max-width: 22%;
+    flex: 0 0 22%;
+}
+
+.footer-col h5 {
+    font-size: 17px;
+}
+
+/* Footer */
+
+/* MEDIA QUERY  */
+
+@media only screen and (max-width: 992px) {
+    .nav-menu {
+        display: block;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background: #EBEBEB;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: +999;
+    }
+
+    .nav-menu.active {
+        left: 0%;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1480px) {
+    .seamless-solution-col {
+        width: 78%;
+    }
+
+    .credit-control-left-col {
+        width: 60%;
+    }
+
+    .credit-control-right-col {
+        width: 40%;
+    }
+
+    .cash-flow-left-col {
+        width: 45%;
+        padding-right: 70px;
+    }
+
+    .cash-flow-right-col {
+        width: 55%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .home-section-2 .home-section-2-inner {
+        max-width: 51%;
+    }
+
+    .credit-control-image {
+        width: 100%;
+    }
+
+    .credit-control-left-col {
+        width: 55%;
+    }
+
+    .home-section-4 {
+        margin-top: 66px;
+        padding: 0 83px;
+    }
+
+    .credit-control-right-col {
+        width: 45%;
+        padding-left: 40px;
+    }
+
+    .home-section-5 {
+        padding: 0 81px 0 81px;
+    }
+
+    .cash-flow-left-col h2 {
+        margin-top: 40px;
+    }
+
+    .home-section-5 {
+        margin-top: 108px;
+    }
+    
+    .cash-flow-left-col {
+        width: 45%;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .home-section-2-inner img {
+        position: absolute;
+        right: -44px;
+        top: 16px;
+    }
+    .invoice-finance-row button , .home-section-4-row button{
+        margin-top: 5rem !important;
+    }
+    .home-section-4-row button{
+        margin-left: 58px;
+    }
+    .seamless-solution-col {
+        width: 85%;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .home-section-1 h1 {
+        font-size: 30px;
+        max-width: 603px;
+    }
+    .home-section-4 .credit-control-home {
+        width: 100px;
+        bottom: -78px;
+    }
+    .credit-control-image {
+        width: 100%;
+    }
+
+    .afterheadereclipse {
+        width: 124px;
+    }
+
+    .home-section-2 .purple-eclipse {
+        top: -82px;
+        width: 84px;
+    }
+
+    .home-section-2 .home-section-2-inner {
+        max-width: 67%;
+    }
+
+    .home-section-2 .purple-eclipse {
+        width: 75px;
+    }
+
+    .home-section-3 .purple-eclipse-right {
+        width: 112px;
+    }
+
+    .home-section-3-row img {
+        width: 100%;
+    }
+
+    .home-section-3 {
+        padding: 50px 15px;
+    }
+    .home-section-5 {
+        margin-top: 108px;
+    }
+    .home-section-4 {
+        padding: 0 25px;
+    }
+    .credit-control-right-col {
+        width: 53%;
+        padding-left: 65px;
+    }
+    .cash-flow-left-col {
+        width: 50%;
+        padding-right: 70px;
+    }
+    .cash-flow-right-col {
+        width: 50%;
+    }
+    .home-section-5 {
+        padding: 0 56px 0 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+    .footer-col {
+        max-width: 33%;
+        flex: 0 0 33%;
+    }
+
+    .footer-col:nth-child(4),
+    .footer-col-last {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-col {
+        max-width: 49%;
+        flex: 0 0 49%;
+    }
+    .home-last-sec {
+        padding: 76px 15px;
+    }
+    .footer-col {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        width: 150px;
+    }
+
+    .footer-col-last {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .credit-control-image {
+        width: 100%;
+    }
+
+    .seamless-solution {
+        width: 100%;
+    }
+    .home-section-1 {
+        font-size: 23px;
+        padding: 0 10px;
+        margin-top: 46px;
+    }
+    .home-section-1 h1 {
+        font-size: 24px;
+    }
+    .home-section-2 {
+        padding: 128px 15px 128px 0;
+    }  
+    .home-section-2 .home-section-2-inner {
+        padding: 53px 25px;
+        max-width: 97%;
+    }  
+    .home-section-2 .purple-eclipse {
+        top: -69px;
+        width: 75px;
+    }
+   
+    .afterheadereclipse {
+        width: 112px;
+    }
+    .home-section-2 {
+        padding: 65px 15px 65px 0;
+    }
+    .home-section-3 .purple-eclipse-right {
+        top: -55px;
+        width: 68px;
+        z-index: -1;
+    }
+    .home-section-3 {
+        padding: 85px 15px;
+    }
+    .seamless-solution-col {
+        width: 100%;
+    }
+    .seamless-solution-col {
+        width: 100%;
+    }
+    .home-section-4 {
+        margin-top: 66px;
+        padding: 0 15px;
+    }
+    .credit-control-right-col {
+        width: 100%;
+    }
+    .credit-control-left-col {
+        width: 100%;
+    }
+    .home-section-5 {
+        margin-top: 54px;
+    }
+    .home-section-5 {
+        padding: 0 15px 0 15px;
+    }
+    .cash-flow-left-col {
+        width: 100%;
+    }
+    
+    .cash-flow-left-col {
+        width: 100%;
+        padding-right: 15px;
+    
+}
+.cash-flow-right-col {
+    width: 100%;
+}
+.home-section-5 .d-flex {
+    flex-direction: column-reverse;
+}
+.home-section-4 .credit-control-home {
+    display: none;
+}
+.cash-flow-right-col ,.cash-flow-left-col,.credit-control-right-col{
+    margin-top: 56px;
+}
+.home-section-2-inner img {
+    position: absolute;
+    right: -15px;
+    top: 16px;
+}
+.home-last-sec .half-right-blue {
+    position: absolute;
+    bottom: -57px;
+    right: 0;
+    width: 84px;
+}
+.logos-home-last-sec img {
+    width: 100%;
+}
+.home-last-sec .half-left-yellow {
+    position: absolute;
+    top: -62px;
+    left: 0;
+    width: 62px;
+}
+.home-section-2-inner form {
+    margin-top: 20px;
+}
+.home-section-3 .invoice-finance-row {
+    margin-top: 20px;
+}
+.home-section-4 .credit-left-circle {
+    position: absolute;
+    left: -62px;
+    top: -51px;
+    z-index: -1;
+    width: 157px;
+}
+}
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+    }
+
+    footer {
+        padding: 43px 15px;
+    }
+
+    .footer-row {
+        justify-content: start !important;
+    }
+
+    .footer-col h5 {
+        font-size: 16px;
+    }
+}
+
+
+/* MEDIA QUERY  */
