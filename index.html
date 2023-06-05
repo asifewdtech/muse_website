@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/global.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title>Home</title>
 </head>
 
 <body>
     <!-- Header -->
     <header class="header" id="navigation-menu">
         <nav class="navbar">
-            <a href="#navigation-menu" class="nav-logo js-anchor-link">
+            <a href="/" class="nav-logo js-anchor-link">
                 <img src="./assets/images/logo.png" alt="" srcset="">
             </a>
             <ul class="nav-menu p-0 mb-0">
@@ -83,9 +84,50 @@
                             class="tt-input tt-input-height w-100 px-3 py-2" name="" id="">
                     </div>
                     <div>
-                        <button type="submit" class="btn bg-0ECCCA btn-custom text-white px-4 py-2 ttu bold">LEARN
+                        <button type="button" data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                            class="btn bg-0ECCCA btn-custom text-white px-4 py-2 ttu bold">LEARN
                             MORE</button>
                     </div>
+                    <!-- MODAL -->
+
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content flex-column modal-bg">
+                                <!-- <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                                </div> -->
+                                <div class="modal-body p-0">
+                                    <h1 class="extraBold text-center text-000 mb-0">YOUR PERSONALISED QUOTE</h1>
+                                    <div class="text-center pt-4">
+                                        <img class="position-static" src="./assets/images/Subtract.png" alt=""
+                                            srcset="">
+                                    </div>
+                                    <div class="modals-details d-flex justify-content-center">
+                                        <div>
+                                            <h2 class="extraBold text-000 ">Facility amount: <span
+                                                    class=" extraBold text-blue">£200,000</span> </h2>
+                                            <h2 class="extraBold text-000  pt-4">Minimum period: <span
+                                                    class=" extraBold text-blue">12 MONTHS</span> </h2>
+                                            <h2 class="extraBold text-000  pt-4">Prepayment percentage: <span
+                                                    class=" extraBold text-blue"> 90%</span> </h2>
+                                            <h2 class="extraBold text-000  pt-4">Bundled service fee:<span
+                                                    class=" extraBold text-blue"> 2.95%</span> </h2>
+                                            <p class="mb-0">
+                                                Charged as a percentage of notified invoice value & bad debt protection
+                                            </p>
+                                            <div>
+                                                <button type="button" class="btn btn-primary btn-purple medium ">ACCEPT
+                                                    OFFER</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL -->
                 </form>
         </div>
     </section>
@@ -229,14 +271,22 @@
                 <h5 class="text-713EE4 regular mb-0 bold tdu">BUSINESS</h5>
                 <div class="pt-4">
                     <h5 class=" mb-0 bold ">SOLUTIONS</h5>
-                    <h5 class="regular mb-0">Invoice Finance</h5>
-                    <h5 class="regular mb-0">Trade Finance</h5>
-                    <h5 class="regular mb-0">Invoice Chasing</h5>
+                    <a  class="text-000" href="./invoice-finance.html" class="tdn">
+                        <h5 class="regular mb-0">Invoice Finance</h5>
+                    </a>
+                    <a class="text-000" href="./tradefinace.html" class="tdn">
+                        <h5 class="regular mb-0">Trade Finance</h5>
+                    </a>
+                    <a class="text-000" href="./credit-control.html" class="tdn">
+                        <h5 class="regular mb-0">Credit Control</h5>
+                    </a>
                 </div>
                 <div class="pt-4">
-                    <h5 class=" mb-0 bold ">TECHNOLOGY</h5>
+                    <h5  class=" mb-0 bold ">TECHNOLOGY</h5>
                     <h5 class="regular mb-0">Portal Name?</h5>
-                    <h5 class="regular mb-0">Cash Flow</h5>
+                    <a  class="text-000" href="./cashflow.html" class="tdn">
+                        <h5 class="regular mb-0">Cash Flow</h5>
+                    </a>
                     <h5 class="regular mb-0">Management App</h5>
                 </div>
                 <div class="pt-4">
@@ -248,15 +298,25 @@
             </div>
             <div class="footer-col">
                 <h5 class="text-713EE4 regular mb-0 bold tdu">COMPANY</h5>
-                <h5 class=" mb-0 bold text-000 pt-4 ">ABOUT US</h5>
-                <h5 class=" mb-0 bold text-000 pt-3 ">CAREERS</h5>
+                <a href="./about.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-4 ">ABOUT US</h5>
+                </a>
+                <a href="./Careerdatabase.html" class="tdn">
+
+                    <h5 class=" mb-0 bold text-000 pt-3 ">CAREERS</h5>
+                </a>
+
                 <h5 class=" mb-0 bold text-000 pt-3 ">LEADERSHIP</h5>
                 <h5 class=" mb-0 bold text-000 pt-3 ">NEWS</h5>
-                <h5 class=" mb-0 bold text-000 pt-3 ">CONTACT US</h5>
+                <a href="./contact-us.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-3 ">CONTACT US</h5>
+                </a>
             </div>
             <div class="footer-col">
                 <h5 class="text-713EE4 regular mb-0 bold tdu">RESOURCES</h5>
-                <h5 class=" mb-0 bold text-000 pt-4 ">BLOG</h5>
+                <a href="./article.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-4 ">BLOG</h5>
+                </a>
                 <h5 class=" mb-0 bold text-000 pt-3 ">FAQ</h5>
                 <h5 class=" mb-0 bold text-000 pt-3 ">GLOASSARY OF TERMS</h5>
                 <h5 class=" mb-0 bold text-000 pt-3 ">OUR CLIENTS</h5>
@@ -267,7 +327,18 @@
                 <h5 class=" mb-0 bold text-000 pt-4 ">LEGAL DOCUMENTS</h5>
                 <h5 class=" mb-0 bold text-000 pt-3 ">PRIVACY POLICY</h5>
                 <h5 class=" mb-0 bold text-000 pt-3 ">COOKIE POLICY</h5>
+                <a href="./investor-relation.html" class="tdn">
+
+                    <h5 class=" mb-0 bold text-000 pt-3 ">INVESTORS RELATIONS</h5>
+                </a>
+
             </div>
+            <!-- <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">LEGALS</h5>
+                <h5 class=" mb-0 bold text-000 pt-4 ">LEGAL DOCUMENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">PRIVACY POLICY</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">COOKIE POLICY</h5>
+            </div> -->
             <div class="footer-col-last">
                 <h5 class=" mb-0 bold text-000">GET OUR MOBILE APP</h5>
                 <div class="d-flex pt-4">

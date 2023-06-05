@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title>Blog Details</title>
+</head>
+<style>
+    .article-banner {
+        padding: 72px 0px;
+        background: linear-gradient(90deg, #0ECCCA 0%, #713EE4 100%);
+       
+    }
+
+    .article-left-circle {
+       
+        left: 0;
+        top: 20px;
+    }
+
+    .color {
+        color: #FBFBFB;
+    }
+
+    .article-paragraph {
+        padding: 22px 0px;
+    }
+
+    .article-banner-btn button {
+        background-color: #713EE4;
+        border: #713EE4;
+        border-radius: 3.42857px;
+        color: #FBFBFB;
+        padding: 5px 36px;
+        margin-top: 26px;
+    }
+
+    .article-right-circle {
+   
+        right: 0;
+        bottom: -38px;
+    }
+
+    /* Article Banner  */
+    /* Article Paragraphs */
+
+    .article-paragraphs {
+        max-width: 851px;
+        padding-top: 143px;
+    }
+
+    .article-para1 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .article-left-yellow-circle img {
+      
+        bottom: 361px;
+        left: 0;
+    }
+
+    .article-right-p-circle img {
+      
+        right: 0px;
+        bottom: -38px;
+    }
+
+    .article-text1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .article-icon {
+        padding-top: 76px;
+    }
+    .article-left-yellow-circle{
+        z-index: -1;
+    }
+
+    /* Tab view  */
+    @media only screen and (max-width: 992px) {
+        .nav-menu {
+            display: block;
+            position: fixed;
+            left: -100%;
+            top: 5rem;
+            flex-direction: column;
+            background: #EBEBEB;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-menu.active {
+            left: 0%;
+        }
+
+        .nav-item {
+            margin: 2.5rem 0;
+        }
+
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+
+
+
+        .article-left-circle img {
+            height: 90px;
+        }
+
+        .article-left-circle {
+          
+            top: 12px;
+        }
+
+        .article-right-circle {
+          
+            bottom: -26px;
+        }
+
+        .article-right-circle img {
+            height: 160px;
+        }
+
+        .article-right-p-circle img {
+            height: 110px;
+            z-index: -1;
+        }
+
+        .article-left-yellow-circle img {
+            height: 160px;
+            z-index: -1;
+        }
+    }
+
+    /* Mobile View  */
+    @media only screen and (max-width: 768px) {
+        .footer-col {
+            max-width: 49%;
+            flex: 0 0 49%;
+        }
+
+        .footer-col {
+            margin-bottom: 20px;
+        }
+
+        .footer-logo {
+            width: 150px;
+        }
+
+        .footer-col-last {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+
+
+        .article-left-circle {
+            top: 8px;
+          
+        }
+
+        .article-left-circle img {
+            height: 78px;
+        }
+
+        .article-right-circle {
+          
+            bottom: -20px;
+        }
+
+        .article-right-circle img {
+            height: 115px;
+        }
+
+        .article-right-p-circle img {
+            height: 75px;
+            z-index: -1;
+        }
+
+        .article-left-yellow-circle img {
+            height: 90px;
+            z-index: -1;
+        }
+
+        .article-paragraphs {
+            padding-top: 33px;
+        }
+
+        .article-banner {
+            padding: 35px 0px;
+        }
+
+        .article-paragraph {
+            padding: 10px 0px;
+        }
+
+        .btn button {
+            margin-top: 3px;
+        }
+  
+    }
+    @media only screen and (max-width: 500px) {
+        .article-para1 {
+            font-size: 16px;
+        }
+        .article-text1 {
+            font-size: 16px;
+        }
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="navigation-menu">
+        <nav class="navbar">
+            <a href="/" class="nav-logo js-anchor-link">
+                <img src="./assets/images/logo.png" alt="" srcset="">
+            </a>
+            <ul class="nav-menu p-0 mb-0">
+                <li class="nav-item">
+                    <a href="#navigation-menu" class="nav-link p-0 js-anchor-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#myskillstext" class="nav-link p-0 js-anchor-link">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#myservices" class="nav-link p-0 js-anchor-link">Resources</a>
+                </li>
+                <li class="nav-item d-lg-none d-md-block d-sm-block">
+                    <button class="btn btn-custom text-white px-4 bg-0ECCCA bold py-2">LOG IN</button>
+                </li>
+            </ul>
+            <div class="d-lg-block d-md-none d-none d-sm-none">
+                <button class="btn bold btn-custom text-white px-4 bg-0ECCCA  py-2">LOG IN</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+    <!-- Article Banner  -->
+    <section class="article-banner color text-center position-relative">
+        <div class="article-left-circle position-absolute">
+            <img src="/assets/images/Ellipse 1.png" alt="">
+        </div>
+        <h1 class="extraBold">ARTICLE TITLE</h1>
+        <div class="article-paragraph">Written by Ashley Martins </div>
+        <div class="article-round">
+            <img src="/assets/images/image_2023_06_02T11_02_06_715Z.png" alt="">
+        </div>
+        <div class="article-banner-btn">
+            <button>GUIDES</button>
+        </div>
+        <div class="article-right-circle position-absolute">
+            <img src="/assets/images/Ellipse 2.png" alt="">
+        </div>
+    </section>
+    <!-- Article Banner -->
+    <!-- Article Paragraphs -->
+    <section class="position-relative">
+        <div class="article-left-yellow-circle position-absolute">
+            <img src="/assets/images/Ellipse 2 (1).png" alt="">
+        </div>
+        <div class="article-paragraphs m-auto px-3">
+
+            <p class="article-para1">
+                Id ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+                Velit
+                dignissim sodales ut eu sem integer vitae justo. A erat nam at lectus urna duis convallis convallis.
+                Feugiat
+                scelerisque varius morbi enim nunc faucibus a pellentesque. Risus ultricies tristique nulla aliquet enim
+                tortor.
+                Consectetur a erat nam at. Elit sed vulputate mi sit amet mauris. Platea dictumst quisque sagittis purus
+                sit
+                amet
+                volutpat consequat. Porta nibh venenatis cras sed felis eget. Ultricies lacus sed turpis tincidunt id
+                aliquet
+                risus feugiat in. Neque convallis a cras semper auctor. Odio tempor orci dapibus ultrices. Et malesuada
+                fames ac
+                turpis. Nulla pellentesque dignissim enim sit amet venenatis. Sed euismod nisi porta lorem mollis
+                aliquam.</p>
+            <p class="article-para1">
+                Id ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+                Velit
+                dignissim sodales ut eu sem integer vitae justo. A erat nam at lectus urna duis convallis convallis.
+                Feugiat
+                scelerisque varius morbi enim nunc faucibus a pellentesque. Risus ultricies tristique nulla aliquet enim
+                tortor.
+                Consectetur a erat nam at. Elit sed vulputate mi sit amet mauris. Platea dictumst quisque sagittis purus
+                sit
+                amet
+                volutpat consequat. Porta nibh venenatis cras sed felis eget. Ultricies lacus sed turpis tincidunt id
+                aliquet
+                risus feugiat in. Neque convallis a cras semper auctor. Odio tempor orci dapibus ultrices. Et malesuada
+                fames ac
+                turpis. Nulla pellentesque dignissim enim sit amet venenatis. Sed euismod nisi porta lorem mollis
+                aliquam.</p>
+            <p class="article-para1">
+                Id ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+                Velit
+                dignissim sodales ut eu sem integer vitae justo. A erat nam at lectus urna duis convallis convallis.
+                Feugiat
+                scelerisque varius morbi enim nunc faucibus a pellentesque. Risus ultricies tristique nulla aliquet enim
+                tortor.
+                Consectetur a erat nam at. Elit sed vulputate mi sit amet mauris. Platea dictumst quisque sagittis purus
+                sit
+                amet
+                volutpat consequat. Porta nibh venenatis cras sed felis eget. Ultricies lacus sed turpis tincidunt id
+                aliquet
+                risus feugiat in. Neque convallis a cras semper auctor. Odio tempor orci dapibus ultrices. Et malesuada
+                fames ac
+                turpis. Nulla pellentesque dignissim enim sit amet venenatis. Sed euismod nisi porta lorem mollis
+                aliquam.</p>
+            <p class="article-para1 pb-5">
+                Id ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+                Velit
+                dignissim sodales ut eu sem integer vitae justo. A erat nam at lectus urna duis convallis convallis.
+                Feugiat
+                scelerisque varius morbi enim nunc faucibus a pellentesque. Risus ultricies tristique nulla aliquet enim
+                tortor.
+                Consectetur a erat nam at. Elit sed vulputate mi sit amet mauris. Platea dictumst quisque sagittis purus
+                sit
+                amet
+                volutpat consequat. Porta nibh venenatis cras sed felis eget. Ultricies lacus sed turpis tincidunt id
+                aliquet
+                risus feugiat in. Neque convallis a cras semper auctor. Odio tempor orci dapibus ultrices. Et malesuada
+                fames ac
+                turpis. Nulla pellentesque dignissim enim sit amet venenatis. Sed euismod nisi porta lorem mollis
+                aliquam.
+            </p>
+            <div class="article-right-p-circle">
+                <img class="position-absolute" src="/assets/images/Ellipse 3.png" alt="">
+            </div>
+            <div class="d-flex cp">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#212529"
+                        class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                        <path fill-rule="evenodd"
+                            d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
+                    </svg></span>
+                <div class="article-text1 m-1">Share this article</div>
+            </div>
+            <div class="article-icon mb-5 d-flex justify-content-between">
+                <!-- left arrow  -->
+                <div class="article-left-arrow d-flex cp">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#212529"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg></span>
+                    <div class="article-text1 ms-1">Previous Article</div>
+                </div>
+                <!-- right arrow  -->
+                <div class="article-right-arrow d-flex cp">
+                    <div class="article-text1 me-1">Next Article</div>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#212529"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Article Paragraphs -->
+
+    <!-- Footer -->
+    <footer class="">
+        <img src="./assets/images/footer-logo.png" class="footer-logo" alt="" srcset="">
+        <div class="d-flex flex-wrap footer-row justify-content-between mt-4">
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">BUSINESS</h5>
+                <div class="pt-4">
+                    <h5 class=" mb-0 bold ">SOLUTIONS</h5>
+                    <a  class="text-000" href="./invoice-finance.html" class="tdn">
+                        <h5 class="regular mb-0">Invoice Finance</h5>
+                    </a>
+                    <a class="text-000" href="./tradefinace.html" class="tdn">
+                        <h5 class="regular mb-0">Trade Finance</h5>
+                    </a>
+                    <a class="text-000" href="./credit-control.html" class="tdn">
+                        <h5 class="regular mb-0">Credit Control</h5>
+                    </a>
+                </div>
+                <div class="pt-4">
+                    <h5  class=" mb-0 bold ">TECHNOLOGY</h5>
+                    <h5 class="regular mb-0">Portal Name?</h5>
+                    <a  class="text-000" href="./cashflow.html" class="tdn">
+                        <h5 class="regular mb-0">Cash Flow</h5>
+                    </a>
+                    <h5 class="regular mb-0">Management App</h5>
+                </div>
+                <div class="pt-4">
+                    <h5 class=" mb-0 bold ">PARTNERSHIP</h5>
+                    <h5 class="regular mb-0">Startups</h5>
+                    <h5 class="regular mb-0">Brokers</h5>
+                    <h5 class="regular mb-0">Accountants</h5>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">COMPANY</h5>
+                <a href="./about.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-4 ">ABOUT US</h5>
+                </a>
+                <a href="./Careerdatabase.html" class="tdn">
+
+                    <h5 class=" mb-0 bold text-000 pt-3 ">CAREERS</h5>
+                </a>
+
+                <h5 class=" mb-0 bold text-000 pt-3 ">LEADERSHIP</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">NEWS</h5>
+                <a href="./contact-us.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-3 ">CONTACT US</h5>
+                </a>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">RESOURCES</h5>
+                <a href="./article.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-4 ">BLOG</h5>
+                </a>
+                <h5 class=" mb-0 bold text-000 pt-3 ">FAQ</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">GLOASSARY OF TERMS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">OUR CLIENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">LEAVE A REVIEW </h5>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">LEGALS</h5>
+                <h5 class=" mb-0 bold text-000 pt-4 ">LEGAL DOCUMENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">PRIVACY POLICY</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">COOKIE POLICY</h5>
+                <a href="./investor-relation.html" class="tdn">
+
+                    <h5 class=" mb-0 bold text-000 pt-3 ">INVESTORS RELATIONS</h5>
+                </a>
+
+            </div>
+            <!-- <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">LEGALS</h5>
+                <h5 class=" mb-0 bold text-000 pt-4 ">LEGAL DOCUMENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">PRIVACY POLICY</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">COOKIE POLICY</h5>
+            </div> -->
+            <div class="footer-col-last">
+                <h5 class=" mb-0 bold text-000">GET OUR MOBILE APP</h5>
+                <div class="d-flex pt-4">
+                    <img src="./assets/images/appstore.png" alt="" srcset="">
+                    <img class="ps-3" src="./assets/images/googleplay.png" alt="" srcset="">
+                </div>
+                <div class="pt-5 d-flex">
+                    <img src="./assets/images/linkedin.png" alt="" height="34" srcset="">
+                    <img src="./assets/images/twitter.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/instagram.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/facebook.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/youtube.png" class="ps-3" alt="" height="34" srcset="">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+</body>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/global.js"></script>
+
+</html>

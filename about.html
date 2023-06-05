@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title>About Us</title>
+</head>
+<style>
+    /* about css */
+    .aboutMain {
+        max-width: 785px;
+    }
+
+    .aboutTitle {
+        font-size: 40px;
+    }
+
+    /* .aboutPadding {
+        padding-top: h;
+    } */
+
+    .aboutPaddingMain {
+        padding-top: 180px;
+        padding-bottom: 30px;
+    }
+
+    .aboutMainSection {
+        padding-bottom: 80px;
+    }
+
+    .aboutCircle_1 {
+        position: absolute;
+        top: 102px;
+        left: -159px;
+    }
+
+    .aboutCircle_2 {
+        position: absolute;
+        top: 151px;
+        right: -166px;
+    }
+
+    .aboutCircle_3 {
+        position: absolute;
+        top: 43px;
+        right: 50px;
+    }
+
+    .featureTitle {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .sectionBorder {
+        width: 200px;
+        border-bottom: 1px solid black;
+    }
+
+    .font_20 {
+        font-size: 20px;
+    }
+
+    .aboutHighlightSection {
+        padding-top: 70px;
+        padding-bottom: 130px;
+    }
+
+    .aboutCircle_4 {
+        position: absolute;
+        top: -70px;
+        left: -81px;
+    }
+
+    .aboutStock {
+        padding-top: 150px;
+    }
+
+    .font_40 {
+        font-size: 40px;
+    }
+
+    .aboutSection_1 {
+        padding: 30px 50px;
+
+    }
+
+    .font_28 {
+        font-size: 28px;
+    }
+
+    .aboutSectionContent {
+        font-weight: 700;
+        line-height: 32px;
+        padding-bottom: 0 !important;
+    }
+
+    .mainBorderAbout {
+        background: #FBFBFB;
+        box-shadow: 0px 3.1031px 3.1031px rgba(0, 0, 0, 0.25);
+        border-radius: 19.3944px;
+        width: fit-content;
+    }
+
+    .featureImg {
+        max-width: 960px;
+    }
+
+    .aboutSection_1 {
+        position: absolute;
+        top: -42px;
+        left: -100px;
+        z-index: +1;
+    }
+
+    .aboutSection_2 {
+        padding: 30px 75px 104px;
+        position: absolute;
+        top: -72px;
+        right: -100px;
+        z-index: +1;
+    }
+
+    .aboutSection_3 {
+        padding: 35px 45px 55px;
+        position: absolute;
+        bottom: -72px;
+        left: -100px;
+    }
+
+    .aboutCircle_5 {
+        position: absolute;
+        top: 105px;
+        left: -100px;
+    }
+
+    .aboutSection_4 {
+        padding: 65px 45px 29px;
+        position: absolute;
+        bottom: 25px;
+        right: -73px;
+    }
+
+    .aboutSection_4 p {
+        line-height: 45px;
+    }
+
+    .aboutCircle_6 {
+        position: absolute;
+    }
+
+    .featureBtn {
+        padding-top: 100px;
+    }
+
+    .featureBtnMain {
+        width: fit-content;
+        z-index: +1;
+    }
+
+    .featureBtnInner {
+        font-size: 24px;
+        font-weight: 500;
+        border-radius: 22px;
+        line-height: 29px;
+        padding: 14px 30px;
+    }
+
+    .aboutCircle_7 {
+        position: absolute;
+        top: 49px;
+        right: -77px;
+        z-index: -1;
+    }
+
+    .font_32 {
+        font-size: 32px;
+    }
+
+    .bg-EBEBEB {
+        background-color: #EBEBEB;
+    }
+
+    .about-last {
+        background: linear-gradient(90deg, #0ECCCA 0%, #713EE4 100%);
+        padding: 150px 0;
+    }
+
+    .aboutLastContent {
+        padding-right: 70px;
+    }
+
+    .aboutCircle10 {
+        position: absolute;
+        top: 0px;
+        left: -55px;
+        /* z-index: -1; */
+    }
+
+    .aboutMainBtn {
+        padding-left: 40px;
+        margin-top: 100px;
+    }
+
+    .aboutLastMain {
+        margin-top: -40px;
+
+    }
+
+    .aboutCircle_9 {
+        position: absolute;
+    }
+
+    .about_section {
+        z-index: +1;
+    }
+
+    .aboutCircle_9 {
+        position: absolute;
+        top: -122px;
+        right: 0;
+        z-index: -1;
+    }
+
+    .aboutCircle_10 {
+        position: absolute;
+        bottom: -100px;
+        right: -169px;
+    }
+
+    .circle_about {
+        position: absolute;
+        top: 17px;
+        right: 0;
+    }
+
+    .logoSection div {
+        width: 12.5%;
+    }
+
+    .logoSection div img {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .about_section img {
+        width: 100%;
+    }
+
+    .aboutPage img {
+        width: 100%;
+    }
+
+    .featureImg img {
+        width: 100%;
+    }
+
+    .aboutCard {
+        max-width: 520px;
+        height: 647px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        /* margin: auto; */
+    }
+
+    .about_second_last {
+        padding: 150px 0 200px;
+    }
+
+    .text-0ECCCA {
+        color: #0ECCCA;
+    }
+
+    .card_title {
+        padding-top: 90px;
+    }
+
+    .card_section_title {
+        font-size: 70px;
+    }
+
+    .aboutIcon {
+        width: 82px;
+        height: 82px;
+        background-color: #FCC832;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .carouselSection {
+        padding-left: 175px;
+    }
+
+    .aboutSetionCircle {
+        position: absolute;
+        bottom: -142px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .carousel-control-next {
+        margin-left: 20px;
+    }
+
+    /* .carousel-inner .carousel-item{
+ width: fit-content;
+ margin-left: auto;
+} */
+    @media only screen and (min-width: 1250px) and (max-width: 1480px) {
+        .circle_about {
+            position: absolute;
+            top: 17px;
+            right: 0;
+        }
+
+        .font_32 {
+            font-size: 30px;
+        }
+
+        .font_20 {
+            font-size: 18px;
+        }
+
+        .logoSection {
+            flex-wrap: nowrap;
+            overflow: scroll;
+        }
+
+        .aboutCircle_5 {
+            left: -61px;
+        }
+
+        .aboutSection_1 {
+            left: -63px;
+        }
+
+        .aboutSection_2 {
+            right: -60px;
+        }
+
+        .aboutSection_3 {
+            left: -60px;
+        }
+
+        .carouselSection {
+            padding-left: 80px;
+        }
+    }
+
+    @media only screen and (min-width: 1080px) and (max-width: 1250px) {
+        .logoSection {
+            flex-wrap: nowrap;
+            overflow: scroll;
+        }
+
+        .aboutCircle_3 {
+            position: absolute;
+            top: 43px;
+            right: 100px;
+        }
+
+        .aboutCircle_1 {
+            position: absolute;
+            top: 102px;
+            left: -80px;
+            z-index: -1;
+        }
+
+        .aboutCircle_2 {
+            position: absolute;
+            top: 151px;
+            right: -100px;
+            z-index: -1;
+        }
+
+        .circle_about {
+            position: absolute;
+            top: 17px;
+            right: 77px;
+        }
+
+        .aboutSection_2 {
+            right: 0;
+        }
+
+        .aboutCircle_1 {
+            left: 0;
+            z-index: -1;
+        }
+
+        .aboutCircle_2 {
+            right: 0;
+            z-index: -1;
+        }
+
+        .circle_about {
+            right: 0;
+            z-index: -1;
+        }
+
+        .aboutSection_3 {
+            left: 0;
+        }
+
+        .aboutSection_4 {
+            right: 0;
+        }
+
+        .aboutSection_1 {
+            left: 0;
+        }
+
+        .aboutCircle_10 {
+            right: -150px;
+        }
+
+        .aboutCircle_5 {
+            left: 30px;
+        }
+
+        .carouselSection {
+            padding-left: 80px;
+        }
+
+        .font_32 {
+            font-size: 28px;
+        }
+
+        .font_20 {
+            font-size: 18px;
+        }
+
+        .card_section_title {
+            font-size: 60px;
+        }
+
+        .carouselSection {
+            padding-left: 20px;
+        }
+    }
+
+    @media only screen and (min-width: 786px) and (max-width: 1080px) {
+        .aboutCircle_1 {
+            left: 0;
+            z-index: -1;
+        }
+
+        .aboutCircle_2 {
+            right: 0;
+            z-index: -1;
+        }
+
+        .circle_about {
+            right: 0;
+            z-index: -1;
+        }
+
+        .aboutSection_3 {
+            left: 0;
+        }
+
+        .aboutSection_4 {
+            right: 0;
+        }
+
+        .aboutCircle_9 {
+            right: -70px;
+        }
+
+        .aboutTeam {
+            flex-direction: column;
+            align-items: start !important;
+        }
+
+        .aboutCircle_9 {
+            position: absolute;
+            top: -122px;
+            right: -86px;
+            z-index: -1;
+        }
+
+        .aboutSection_1 {
+            left: 33px;
+        }
+
+        .aboutCircle_5 {
+            position: absolute;
+            top: 105px;
+            left: 33px;
+        }
+
+        .aboutSection_2 {
+            right: 38px;
+        }
+
+        .aboutIcon img {
+            width: 65%;
+        }
+
+        .aboutSetionCircle img {
+            width: 80%;
+        }
+
+        .aboutIcon {
+            width: 64px;
+            height: 64px;
+        }
+
+        .aboutSection_3 {
+            left: 33px;
+        }
+
+        .aboutSection_4 {
+            bottom: 9px;
+            right: 40px;
+        }
+
+        .carouselSection {
+            padding-left: 10px;
+        }
+
+        .aboutMainBtn {
+            margin-top: 20px;
+        }
+
+        .about_section {
+            z-index: +1;
+            margin-top: 100px;
+        }
+
+        .aboutPage {
+            text-align: left !important;
+        }
+
+        .aboutLastMain {
+            margin-top: -30px;
+        }
+
+        .aboutCircle_10 {
+            right: -66px;
+        }
+
+        .font_40 {
+            font-size: 32px;
+        }
+
+        .font_28 {
+            font-size: 24px;
+        }
+
+        .font_32 {
+            font-size: 28px;
+        }
+
+        .aboutLastContent {
+            padding-right: 0;
+        }
+
+        .card_section_title {
+            font-size: 55px;
+        }
+
+        .font_20 {
+            font-size: 17px;
+        }
+
+        .font_32 {
+            font-size: 27px;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        .carouselSection {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card_section_title {
+            font-size: 40px;
+        }
+
+        .carousel-inner {
+            width: 60%;
+        }
+
+        .about_second_Main {
+            flex-direction: column-reverse;
+        }
+
+        .carousel-control-prev {
+            margin-right: 20px;
+        }
+
+        .aboutIcon img {
+            width: 50%;
+        }
+
+        .aboutSetionCircle {
+            position: absolute;
+            bottom: -101px;
+            left: 26px;
+            z-index: -1;
+        }
+
+        .carouselSectionMain {
+            width: 70%;
+        }
+
+        .aboutCard {
+            height: auto;
+        }
+    }
+
+    @media only screen and (max-width: 786px) {
+        .aboutCircle_1 {
+            left: 0;
+            top: 100px;
+            z-index: -1;
+        }
+
+        .aboutPaddingMain {
+            padding-top: 90px;
+        }
+
+        .aboutCircle_2 {
+            right: 20px;
+            top: 180px;
+            z-index: -1;
+        }
+
+        .carousel-inner {
+            width: 75%;
+        }
+
+        .carouselSectionMain {
+            width: 85%;
+        }
+
+        .aboutIcon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .about_second_last {
+            padding: 50px 0 110px;
+        }
+
+        .carouselSection {
+            padding-left: 0;
+        }
+
+        .aboutSection_1 {
+            left: 12px;
+        }
+
+        .aboutCircle_5 {
+            left: 0;
+        }
+
+        .aboutSection_2 {
+            right: 20px;
+        }
+
+        .aboutSection_3 {
+            left: 15px;
+        }
+
+        .aboutSection_4 {
+            right: 20px;
+        }
+
+        .font_40 {
+            font-size: 28px;
+        }
+
+        .font_28 {
+            font-size: 20px;
+        }
+
+        .aboutCircle_10 {
+            right: 0;
+        }
+
+        .aboutTeam {
+            flex-direction: column;
+            align-items: start !important;
+        }
+
+        .featureBtnInner {
+            font-size: 20px;
+        }
+
+        .aboutMainBtn {
+            margin-top: 10px;
+        }
+
+        .aboutCircle_3 {
+            z-index: -1;
+        }
+
+        .featureImg {
+            padding: 20px;
+        }
+
+        .aboutCircle_7 img {
+            width: 70%;
+        }
+
+        .aboutSection_4 {
+            padding: 40px 30px 15px;
+        }
+
+        .aboutTitle {
+            font-size: 28px;
+        }
+
+        .aboutSection_3 {
+            padding: 25px 30px 35px;
+        }
+
+        .aboutSection_2 {
+            padding: 25px 55px 53px;
+        }
+
+        .aboutSection_1 {
+            padding: 20px 35px;
+        }
+
+        .aboutCircle {
+            padding: 0 20px;
+        }
+
+        .font_32 {
+            font-size: 21px;
+        }
+
+        .aboutCircle_10 img {
+            width: 60%;
+        }
+
+        .aboutCircle_9 {
+            right: 0;
+            top: -65px;
+        }
+
+        .circle_about {
+            right: 0;
+            z-index: -1;
+        }
+
+        .aboutLastMain {
+            margin-top: 60px;
+        }
+
+        .aboutCircle_5 img {
+            width: 70%;
+            top: 60px;
+        }
+
+        .aboutCircle_5 {
+            top: 66px;
+        }
+
+        .aboutCircle10 {
+            width: 80%;
+        }
+
+        .aboutCircle_3 img {
+            width: 70%;
+        }
+
+        .aboutCircle_1 img {
+            width: 70%;
+        }
+
+        .aboutCircle_2 img {
+            width: 70%;
+        }
+
+        .about_section {
+            margin-top: 80px;
+        }
+
+        .aboutCircle_9 img {
+            width: 70%;
+        }
+
+        .aboutStock {
+            padding-top: 100px;
+        }
+
+        .font_20 {
+            font-size: 18px;
+        }
+
+        .aboutLastContent {
+            padding-right: 0px;
+        }
+
+        p {
+            margin-bottom: 0 !important;
+        }
+
+        .about-last {
+            padding-top: 40px;
+            padding-bottom: 110px;
+        }
+
+        .aboutMainSection {
+            padding-bottom: 32px;
+        }
+
+        .aboutStock {
+            padding-top: 60px;
+        }
+
+        .aboutHighlightSection {
+            padding-top: 30px;
+            padding-bottom: 61px;
+        }
+
+        .featureBtnInner {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .aboutCircle_7 {
+            top: 20px;
+            right: -58px;
+        }
+
+    }
+
+    @media only screen and (max-width: 567px) {
+        .font_40 {
+            font-size: 20px;
+        }
+
+        .aboutSectionContent {
+            line-height: 20px;
+        }
+
+        .carousel-inner {
+            width: 90%;
+        }
+
+        .carouselSectionMain {
+            width: 95%;
+        }
+
+        .aboutCircle_9 img {
+            width: 50%;
+        }
+
+        .card_section_title {
+            font-size: 28px;
+        }
+
+        .aboutSection_1 {
+            padding: 16px 25px;
+        }
+
+        .featureBtn {
+            padding-top: 50px;
+        }
+
+        .aboutSection_2 {
+            padding: 21px 30px 30px;
+        }
+
+        .aboutSection_3 {
+            padding: 17px 16px 24px;
+        }
+
+        .aboutSection_4 p {
+            line-height: 30px;
+        }
+
+        .aboutSection_4 {
+            padding: 10px 24px 10px;
+        }
+
+        .aboutCircle_5 img {
+            width: 50%;
+        }
+
+        .aboutSection_1 {
+            top: -25px;
+        }
+
+        .aboutSection_2 {
+            top: -45px;
+        }
+
+        .aboutSection_3 {
+            bottom: -40px;
+        }
+
+        .aboutSection_4 {
+            bottom: 13px;
+        }
+
+        .font_28 {
+            font-size: 15px;
+        }
+
+        .font_28 {
+            font-size: 15px;
+        }
+
+        .font_32 {
+            font-size: 18px;
+        }
+
+        .circle_about img {
+            width: 70%;
+        }
+    }
+
+    /* about css */
+</style>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="navigation-menu">
+        <nav class="navbar">
+            <a href="/" class="nav-logo js-anchor-link">
+                <img src="./assets/images/logo.png" alt="" srcset="">
+            </a>
+            <ul class="nav-menu p-0 mb-0">
+                <li class="nav-item">
+                    <a href="#navigation-menu" class="nav-link p-0 js-anchor-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#myskillstext" class="nav-link p-0 js-anchor-link">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#myservices" class="nav-link p-0 js-anchor-link">Resources</a>
+                </li>
+                <li class="nav-item d-lg-none d-md-block d-sm-block">
+                    <button class="btn btn-custom text-white px-4 bg-0ECCCA bold py-2">LOG IN</button>
+                </li>
+            </ul>
+            <div class="d-lg-block d-md-none d-none d-sm-none">
+                <button class="btn bold btn-custom text-white px-4 bg-0ECCCA  py-2">LOG IN</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <!-- section -->
+    <section class="aboutMainSection">
+        <div class="aboutPaddingMain position-relative">
+            <!-- -------------- -->
+            <div class="aboutMain  m-auto text-center position-relative">
+                <h1 class="extraBold aboutTitle text-center">Redesigning alternative <br> finance for Your BUSINESS</h1>
+                <div class="aboutCircle">
+                    <p class="pt-lg-4 pt-sm-0 pt-0 font_20">We are disrupting the receivables and trade credit finance
+                        markets.</p>
+                    <p class="pt-lg-2 pt-sm-0 pt-0 font_20">Our team has decades of collective experience in finance,
+                        technology and
+                        customer service.</p>
+                    <p class="py-lg-1 py-sm-0 py-0 font_20">Our tech-enabled portal, created in house, is
+                        revolutionising <br>
+                        how SMEs get financing and manage cash flow. </p>
+                </div>
+                <div class="aboutCircle_1">
+                    <img src="./assets/images/about.png" alt="...">
+                </div>
+                <div class="aboutCircle_2">
+                    <img src="./assets/images/about_1.png" alt="...">
+                </div>
+
+            </div>
+            <div class="aboutCircle_3">
+                <img src="./assets/images/about_2.png" alt="...">
+            </div>
+        </div>
+        <!-- ---------------- -->
+        <div class="mt-lg-5 mt-sm-2 mt-2 text-center">
+            <h3 class="featureTitle ">As featured in</h3>
+            <div class="d-flex justify-content-center mt-lg-5 mt-sm-2 mt-3 logoSection">
+                <div>
+                    <img src="./assets/images/logo1.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/images/logo2.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/images/logo3.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/images/logo4.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/images/logo5.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/images/logo6.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/images/logo7.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/images/logo8.png" alt="">
+                </div>
+            </div>
+            <!-- <img class="pt-2" src="./assets/images/featureLogo.png" alt=""> -->
+        </div>
+        <div class="aboutInner px-lg-5 px-sm-3 px-3">
+            <div class="row w-100 mx-0 flex-wrap my-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="sectionBorder">
+                        <img src="./assets/images/aboutLogo1.png" alt="">
+                        <div class="py-3">
+                            <p class="font_20">Press Release or Blog Title</p>
+                            <p class="font_20">Description?</p>
+                            <a class="text-dark font_20" href="./article-details.html"><b>Read Article</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-4 mt-4">
+                    <div class="sectionBorder">
+                        <img src="./assets/images/aboutLogo2.png" alt="">
+                        <div class="py-4">
+                            <p class="font_20">Press Release or Blog Title</p>
+                            <p class="font_20">Description?</p>
+                            <a class="text-dark font_20" href="./article-details.html"><b>Read Article</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative mt-lg-0 mt-sm-4 mt-4">
+                    <div class="sectionBorder">
+                        <img src="./assets/images/aboutLogo3.png" alt="">
+                        <div class="py-3">
+                            <p class="font_20">Press Release or Blog Title</p>
+                            <p class="font_20">Description?</p>
+                            <a class="text-dark font_20" href="./article-details.html"><b>Read Article</b></a>
+                        </div>
+                    </div>
+                    <div class="circle_about">
+                        <img src="./assets/images/circle_about.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section -->
+    <!-- section -->
+    <section class="bg-0ECCCA aboutHighlightSection position-relative">
+        <div class="aboutCircle_4">
+            <img src="./assets/images/about_3.png" alt="">
+        </div>
+        <div>
+            <h2 class="extraBold text-white text-center">Highlights</h2>
+        </div>
+        <div class="aboutStock">
+            <div class="text-center featureImg position-relative m-auto">
+                <img class="" src="./assets/images/aboutMain.png" alt="">
+                <div class="aboutSection_1 mainBorderAbout">
+                    <p class="text-warning extraBold font_40 mb-0">600</p>
+                    <p class="font_28 aboutSectionContent mb-0">Businesses</p>
+                    <p class="font_28 aboutSectionContent mb-0">funded</p>
+                </div>
+                <div class="mainBorderAbout aboutSection_2">
+                    <p class="text-warning extraBold font_40">35x</p>
+                    <!-- <div class="aboutCircle_6">
+                <img src="./assets/images/aboutCircle6.png" alt="">
+            </div> -->
+                </div>
+                <div class="aboutCircle_5">
+                    <img src="./assets/images/aboutCircle4.png" alt="">
+                </div>
+                <div class="aboutSection_3 mainBorderAbout">
+                    <p class="text-warning extraBold font_40 mb-0">£200M+</p>
+                    <p class="font_28 aboutSectionContent mb-0">Deployed funds</p>
+                </div>
+                <div class="aboutSection_4 mainBorderAbout">
+                    <p class="text-warning extraBold font_40 mb-0">150k</p>
+                    <p class="text-warning extraBold font_40 mb-0">150k1</p>
+                    <p class="text-warning extraBold font_40 mb-0">50k</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center featureBtn">
+            <div class="featureBtnMain position-relative m-auto">
+                <button class="border-0 bg-713EE4 text-white featureBtnInner">CONTACT US <br> TODAY</button>
+                <div class="aboutCircle_7">
+                    <img src="./assets/images/aboutCircle_9.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section -->
+    <!-- section -->
+    <section class="bg-EBEBEB py-5 text-center">
+        <h2 class="aboutMissionTitle font_40 extraBold text-713EE4">Our Mission</h2>
+        <p class="aboutMissionContent font_32 text-713EE4 medium pt-2 px-lg-0 px-sm-3 px-3">To give financial control to
+            business owners
+            around the globe</p>
+    </section>
+    <!-- section -->
+    <section class="about_second_last">
+        <div class="row justify-content-center align-items-center about_second_Main w-100">
+            <div class="col-lg-5">
+                <div id="carouselExampleControls"
+                    class="carousel slide carouselSection position-relative mt-lg-0 mt-sm-3 mt-3"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner pb-5">
+                        <div class="carousel-item active">
+                            <div class="aboutCard bg-0ECCCA px-4 py-3">
+                                <div class="card-image">
+                                    <img src="./assets/images/aboutCarousel_1.png" alt="">
+                                </div>
+                                <p class="font_20 text-white pt-lg-5 pt-sm-2 pt-2">“Muse Finance has been brilliant! I
+                                    did my
+                                    research when looking for an invoice finance team to
+                                    support my cash flow and I am really impressed ...Read more | with the level of
+                                    customer
+                                    service. The team understand the needs of SME’s and have responded to critical
+                                    changes in real
+                                    time to help us ensure the continued growth of our year 1 start up.” </p>
+                                <p class="font_32 extraBold text-white pt-lg-0 pt-sm-3 pt-3">Co-Founder & Managing
+                                    Director, Holden Knight Education Ltd
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aboutCard bg-white px-4 py-3 mx-2">
+                                <div class="card-image">
+                                    <img src="./assets/images/aboutCarousel_2.png" alt="">
+                                </div>
+                                <p class="font_20 text-0ECCCA pt-lg-5 pt-sm-2 pt-2">“Our experience over the last few
+                                    years has been
+                                    really great. We have had an excellent business relationship with them and have
+                                    always felt
+                                    valued and supported by the team.”</p>
+                                <p class="font_32 extraBold text-0ECCCA card_title">Co-Founder & Finance Director, LJJ
+                                    Surfacing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutSetionCircle">
+                        <img src="./assets/images/last_circle.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 carouselSection carouselSectionMain">
+                <div>
+                    <h2 class="card_section_title extraBold">What our <br> clients say</h2>
+                </div>
+                <div>
+                    <div class="d-flex m-auto mt-4">
+                        <button class="carousel-control-prev position-static" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true">
+                                <span class="aboutIcon"><img src="./assets/images/Arrow 3.png" alt=""></span>
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next position-static" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true">
+                                <span class="aboutIcon mx-3"><img src="./assets/images/Arrow 4.png" alt=""></span>
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section -->
+    <section class="about-last">
+        <div class="container">
+            <div class="row w-100 mx-0 align-items-center aboutTeam">
+                <div class="col-lg-6 col-md-6 aboutSectionLast">
+                    <h3 class="text-white extraBold font_40">Join the team</h3>
+                    <p class="font_20 text-white aboutLastContent">As we continue our growth in the heart of London,
+                        we’re always on the lookout for talented
+                        individuals with a passionate and entrepreneurial mindset. </p>
+                    <div class="mt-5  wfc contact-join-team text-center position-relative ">
+                        <button type="button" class="btn bg-713EE4 btn-custom  text-white px-4 py-2 ttu bold">
+                            CAREERS</button>
+                        <img class="btn-custom-eclipse" src="./assets/images/blue-yellow.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 about_section position-relative">
+                    <img src="./assets/images/aboutLast.png" alt="">
+                    <div class="aboutCircle_9">
+                        <img src="./assets/images/aboutCircle9.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 mx-0 aboutLastMain">
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-6 m-auto">
+                    <div class="text-center aboutPage position-relative">
+                        <img class="" src="./assets/images/AboutLast2.png" alt="">
+                        <div class="aboutCircle_10">
+                            <img src="./assets/images/aboutCircle10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section -->
+    <!-- Footer -->
+    <footer class="">
+        <img src="./assets/images/footer-logo.png" class="footer-logo" alt="" srcset="">
+        <div class="d-flex flex-wrap footer-row justify-content-between mt-4">
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">BUSINESS</h5>
+                <div class="pt-4">
+                    <h5 class=" mb-0 bold ">SOLUTIONS</h5>
+                    <a  class="text-000" href="./invoice-finance.html" class="tdn">
+                        <h5 class="regular mb-0">Invoice Finance</h5>
+                    </a>
+                    <a class="text-000" href="./tradefinace.html" class="tdn">
+                        <h5 class="regular mb-0">Trade Finance</h5>
+                    </a>
+                    <a class="text-000" href="./credit-control.html" class="tdn">
+                        <h5 class="regular mb-0">Credit Control</h5>
+                    </a>
+                </div>
+                <div class="pt-4">
+                    <h5  class=" mb-0 bold ">TECHNOLOGY</h5>
+                    <h5 class="regular mb-0">Portal Name?</h5>
+                    <a  class="text-000" href="./cashflow.html" class="tdn">
+                        <h5 class="regular mb-0">Cash Flow</h5>
+                    </a>
+                    <h5 class="regular mb-0">Management App</h5>
+                </div>
+                <div class="pt-4">
+                    <h5 class=" mb-0 bold ">PARTNERSHIP</h5>
+                    <h5 class="regular mb-0">Startups</h5>
+                    <h5 class="regular mb-0">Brokers</h5>
+                    <h5 class="regular mb-0">Accountants</h5>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">COMPANY</h5>
+                <a href="./about.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-4 ">ABOUT US</h5>
+                </a>
+                <a href="./Careerdatabase.html" class="tdn">
+
+                    <h5 class=" mb-0 bold text-000 pt-3 ">CAREERS</h5>
+                </a>
+
+                <h5 class=" mb-0 bold text-000 pt-3 ">LEADERSHIP</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">NEWS</h5>
+                <a href="./contact-us.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-3 ">CONTACT US</h5>
+                </a>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">RESOURCES</h5>
+                <a href="./article.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-4 ">BLOG</h5>
+                </a>
+                <h5 class=" mb-0 bold text-000 pt-3 ">FAQ</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">GLOASSARY OF TERMS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">OUR CLIENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">LEAVE A REVIEW </h5>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">LEGALS</h5>
+                <h5 class=" mb-0 bold text-000 pt-4 ">LEGAL DOCUMENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">PRIVACY POLICY</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">COOKIE POLICY</h5>
+                <a href="./investor-relation.html" class="tdn">
+
+                    <h5 class=" mb-0 bold text-000 pt-3 ">INVESTORS RELATIONS</h5>
+                </a>
+
+            </div>
+            <!-- <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">LEGALS</h5>
+                <h5 class=" mb-0 bold text-000 pt-4 ">LEGAL DOCUMENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">PRIVACY POLICY</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">COOKIE POLICY</h5>
+            </div> -->
+            <div class="footer-col-last">
+                <h5 class=" mb-0 bold text-000">GET OUR MOBILE APP</h5>
+                <div class="d-flex pt-4">
+                    <img src="./assets/images/appstore.png" alt="" srcset="">
+                    <img class="ps-3" src="./assets/images/googleplay.png" alt="" srcset="">
+                </div>
+                <div class="pt-5 d-flex">
+                    <img src="./assets/images/linkedin.png" alt="" height="34" srcset="">
+                    <img src="./assets/images/twitter.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/instagram.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/facebook.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/youtube.png" class="ps-3" alt="" height="34" srcset="">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+</body>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/global.js"></script>
+
+</html>

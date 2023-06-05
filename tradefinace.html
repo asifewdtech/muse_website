@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+<style>
+    /* Trade Finance page css start*/
+
+    .trade-finace-heading {
+        margin-top: 7rem;
+        font-family: Montserratextrabold;
+    }
+
+    .trade-finace-heading h1 {
+
+        font-family: Montserratextrabold;
+    }
+
+    .tf-text p {
+        font-size: 20px;
+    }
+
+    .tf-list {
+        color: #000000;
+    }
+
+    .tf-btn {
+        background-color: #0ECCCA;
+        border: none;
+        padding: 12px 20px;
+        color: white;
+    }
+
+    .tf-optimize-heading {
+        color: #000000;
+    }
+
+    .tf-shipment-sec {
+        background-color: #0ECCCA;
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+    }
+
+    .tf-box-one {
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .tf-box-two {
+        border-radius: 20px;
+        position: absolute;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .tf-ship {
+        background-image: url('./assets/images/tf-imgs\ \(9\).png');
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .shipbox-three-row {
+        margin-top: 9rem;
+    }
+
+    .tf-box-three {
+        border-radius: 20px;
+
+    }
+
+    .tf-box-three-col {
+        position: absolute;
+        top: 100px;
+        left: 150px;
+    }
+
+    .tf-number-two {
+        background-color: #773ce2;
+        padding: 15px 30px;
+    }
+
+    .tf-number-one {
+        background-color: #00cfcd;
+        padding: 15px 30px;
+    }
+
+    .tf-stp-two {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+    .tf-number-two-step {
+        color: #773ce2;
+      
+    }
+
+    .tf-number-one-step {
+        color: #00cfcd;
+        width: 100%;
+        text-align: center;
+    }
+
+    .circle-work-steps {
+        background-image: url('./assets/images/Asset\ 1.svg');
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 750px;
+        z-index: -11;
+    }
+
+    .tf-second-row-steps {
+        margin-top: 8rem;
+    }
+
+    .tf-col-2 {
+        width: 410px;
+    }
+
+    .tf-col-1 {
+        width: 410px;
+    }
+
+    .tf-col-3 {
+        width: 410px;
+    }
+
+    .tf-col-4 {
+        width: 410px;
+    }
+
+    .tf-col-5 {
+        width: 410px;
+    }
+
+    .tf-sec-for-tab {
+        display: none;
+    }
+
+    .tf-circle-one {
+       
+        left: -87px;
+        top: -80px;
+        z-index: -1;
+
+    }
+
+    .tf-circle-two {
+       
+        right: 0;
+        z-index: -1;
+        top: 160px;
+    }
+
+    .tf-circle-three {
+     
+        left: 0;
+        top: -100px;
+        z-index: -1;
+    }
+
+    .tf-circle-four {
+      
+        left: 0;
+        top: 0;
+
+    }
+
+    .tf-circle-five {
+      
+        left: 0;
+        bottom: -20;
+        z-index: -1;
+    }
+
+    .tf-circle-six {
+      
+        left: 0;
+        top: 350px;
+
+    }
+
+    .tf-circle-seven {
+      
+        right: 0;
+        top: 0;
+    }
+
+    .tf-men {
+        
+        top: -220px;
+        left: 180px;
+        width: 180px;
+    }
+
+    @media only screen and (max-width: 991px) {
+        .tf-list {
+            color: #000000;
+            font-size: 18px;
+        }
+
+        .tf-circle-four {
+         
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .tf-box-one h4 {
+            font-size: 16px;
+        }
+
+        .tf-box-two {
+            position: static;
+            margin-top: 10px;
+        }
+
+        .tf-box-two h4 {
+            font-size: 16px;
+        }
+
+        .tf-box-three-col {
+            position: static;
+        }
+
+        .shipbox-three-row {
+            margin-top: 0rem;
+        }
+
+        .tf-box-three h4 {
+            font-size: 16px;
+        }
+
+        .tf-shipment-sec {
+            padding-top: 1rem;
+        }
+
+        .trade-finace-heading {
+            margin-top: 7rem;
+        }
+
+        .tf-ship {
+            height: auto;
+        }
+
+    }
+
+    @media only screen and (max-width: 819px) {
+        .tf-work-section {
+            display: none;
+        }
+
+        .tf-sec-for-tab {
+            display: block;
+        }
+
+        .tf-second-row-steps {
+            margin-top: 2rem;
+        }
+
+        .tf-number-two-step h3 {
+            font-size: 21px;
+        }
+
+        .tf-number-one-step h3 {
+            font-size: 21px;
+        }
+
+        .tf-number-one-step {
+            font-size: 17px;
+      
+        }
+
+        .tf-col-1 h5 {
+            font-size: 16px;
+        }
+
+        .tf-col-3 h5 {
+            font-size: 16px;
+        }
+
+        .tf-col-4 h5 {
+            font-size: 16px;
+            min-height: 38px;
+        }
+
+        .tf-col-5 h5 {
+            font-size: 16px;
+        }
+
+        .tf-ship {
+            background-image: none;
+        }
+      
+        .tf-col-2 {
+            width: 45%;
+        }
+    
+        .tf-col-1 {
+            width: 45%;
+        }
+    
+        .tf-col-3 {
+            width: 45%;
+        }
+    
+        .tf-col-4 {
+            width: 45%;
+        }
+    
+        .tf-col-5 {
+            width: 45%;
+        }
+     
+
+    }
+
+    @media only screen and (min-width: 819px) and (max-width: 1200px) {
+        .tf-men {
+          
+            top: -220px;
+            left: 50px;
+            width: 180px;
+        }
+
+    }
+    @media only screen and (max-width: 600px) {
+        .tf-col-2 {
+            width: 100%;
+        }
+    
+        .tf-col-1 {
+            width: 100%;
+        }
+    
+        .tf-col-3 {
+            width: 100%;
+        }
+    
+        .tf-col-4 {
+            width: 100%;
+        }
+    
+        .tf-col-5 {
+            width: 100%;
+        }
+    }
+
+    /* Trade Finance page css end*/
+</style>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="navigation-menu">
+        <nav class="navbar">
+            <a href="/" class="nav-logo js-anchor-link">
+                <img src="./assets/images/logo.png" alt="" srcset="">
+            </a>
+            <ul class="nav-menu p-0 mb-0">
+                <li class="nav-item">
+                    <a href="#navigation-menu" class="nav-link p-0 js-anchor-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#myskillstext" class="nav-link p-0 js-anchor-link">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#myservices" class="nav-link p-0 js-anchor-link">Resources</a>
+                </li>
+                <li class="nav-item d-lg-none d-md-block d-sm-block">
+                    <button class="btn btn-custom text-white px-4 bg-0ECCCA bold py-2">LOG IN</button>
+                </li>
+            </ul>
+            <div class="d-lg-block d-md-none d-none d-sm-none">
+                <button class="btn bold btn-custom text-white px-4 bg-0ECCCA  py-2">LOG IN</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <!-- Trade Finance page start -->
+
+    <img class="tf-circle-two  position-absolute" src="./assets/images/TF-circle (5).png" alt="circle not showing">
+    <div class="trade-finace-heading position-relative">
+
+        <div class="row d-flex justify-content-center align-items-center position-relative">
+            <div class="col-lg-4 position-relative">
+                <img class="tf-circle-one  position-absolute" src="./assets/images/tf-imgs (2).png" alt="circle not showing">
+                <h1 class="bold text-center mt-lg-5">Trade Finance</h1>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tf-text text-center p-4 mb-5">
+        <p class="mb-0">Our trade credit and trade payables</p>
+        <p> give your SME access to nimble supply chain financing. </p>
+        <p> We pay your suppliers directly. They ship your goods immediately.</p>
+    </div>
+
+    <div class="row d-flex my-5">
+        <div class="col-lg-6 position-relative">
+            <img class="tf-circle-three position-absolute" src="./assets/images/TF-circle (4).png" alt="circle not showing">
+
+            <img class="img-fluid" src="./assets/images/tf-imgs (8).png" alt="">
+        </div>
+        <div class="col-lg-6 p-lg-5 p-4">
+            <h2 class="tf-optimize-heading bold text-center my-3">Optimise your cash flow </h2>
+            <div class="tf-main-list d-flex align-items-center pt-lg-5 pt-4">
+                <div class=""><img src="./assets/images/Si (6).png" alt="list"></div>
+                <div>
+                    <h4 class="tf-list ps-lg-5 ps-4 bold"> Lengthen your supplier financing terms </h4>
+                </div>
+            </div>
+            <div class="tf-main-list d-flex align-items-center mt-4">
+                <div class=""><img src="./assets/images/Si (6).png" alt="list"></div>
+                <div>
+                    <h4 class="tf-list ps-lg-5 ps-4 bold"> Shorten the wait for goods you need </h4>
+                </div>
+            </div>
+            <div class="tf-main-list d-flex align-items-center mt-4">
+                <div class=""><img src="./assets/images/Si (6).png" alt="list"></div>
+                <div>
+                    <h4 class="tf-list ps-lg-5 ps-4 bold"> Speed up your sales and receivables </h4>
+                </div>
+            </div>
+            <div class="mt-5  wfc m-auto contact-join-team text-center position-relative ">
+                <button type="button" class="btn bg-0ECCCA btn-custom  text-white px-4 py-2 ttu bold">
+                    GET A QUOTE</button>
+                <img class="btn-custom-eclipse" src="./assets/images/blue-yellow.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <section class="tf-shipment-sec position-relative">
+        <div class="position-relative">
+            <h2 class="col-lg-8 mx-auto text-white text-center bold py-5 px-2">Our supply chain finance takes the stress
+                out of international
+                trade</h2>
+            <img class="tf-circle-four position-absolute" src="./assets/images/TF-circle (6).png" alt="">
+        </div>
+        <div class="container-lg ">
+            <div class="tf-ship">
+                <div class="row d-flex justify-content-between align-items-center position-relative p-3">
+                    <div class="col-lg-4 px-0">
+                        <div class="tf-box-one bg-white text-center p-lg-5 p-4">
+                            <img class="" src="./assets/images/tf-imgs (12).png" alt="">
+                            <h4 class="bold mt-4"> We pay your suppliers directly, in any currency, so your goods ship
+                                straightaway</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 px-0">
+                        <div class="tf-box-two bg-white text-center p-lg-5 p-4 ">
+                            <img class="" src="./assets/images/tf-imgs (10).png" alt="">
+                            <h4 class="bold mt-4"> Focus on making and selling your goods to grow your business </h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row position-relative shipbox-three-row">
+                    <div class="col-lg-4 tf-box-three-col p-3 pt-0">
+                        <div class="tf-box-three bg-white text-center p-lg-5 p-4">
+                            <img class="" src="./assets/images/tf-imgs (11).png" alt="">
+                            <h4 class="bold mt-4"> Pay us for these supplies anytime within the next 120 days</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="tf-circle-five position-absolute" src="./assets/images/TF-circle (2).png" alt="">
+
+    </section>
+    <h2 class="tf-work-heading my-5 bold text-center">
+        How does it work?
+    </h2>
+    <section class="tf-work-section my-5 position-relative">
+
+        <div class="circle-work-steps pt-4 position-relative">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="tf-col-2">
+                    <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                        <div class="tf-number-two">
+                            <h2 class="text-white bold mb-0">2</h2>
+                        </div>
+                        <div class="tf-number-two-step w-100 text-center">
+                            <h3 class="bold pe-4 mb-0">SUBMIT INVOICE</h3>
+                        </div>
+                    </div>
+                    <p class="bold mt-2">You submit your supplier's invoice</p>
+
+                </div>
+
+            </div>
+            <div class="container-lg py-5  ">
+
+                <div class="row d-flex align-items-center justify-content-between mt-5">
+                    <div class="tf-col-1 position-relative">
+                        <img class="tf-men position-absolute" src="./assets/images/men.svg" alt="men">
+                        <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                            <div class="tf-number-one">
+                                <h2 class="text-white bold mb-0">1</h2>
+                            </div>
+                            <div class="tf-number-one-step">
+                                <h3 class="bold mb-0">ORDER PLACED</h3>
+                            </div>
+                        </div>
+                        <h5 class="bold mt-2">Your business placed an order with a supplier we've approved.</h5>
+
+                    </div>
+                    <div class="tf-col-3">
+                        <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                            <div class="tf-number-one">
+                                <h2 class="text-white bold mb-0">3</h2>
+                            </div>
+                            <div class="tf-number-one-step">
+                                <h3 class="bold  mb-0">SUPLIER PAID</h3>
+                            </div>
+                        </div>
+                        <h5 class="bold mt-2">We pay your supplier through our FX partner.</h5>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-lg tf-second-row-steps">
+
+                <img class="tf-circle-six position-absolute" src="./assets/images/TF-circle (1).png" alt="">
+                <img class="tf-circle-seven position-absolute" src="./assets/images/TF-circle (5).png" alt="">
+
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="tf-col-5 ">
+                        <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                            <div class="tf-number-two">
+                                <h2 class="text-white bold mb-0">5</h2>
+                            </div>
+                            <div class="tf-number-two-step text-center w-100">
+                                <h3 class="bold  mb-0">YOU REPAY US</h3>
+                            </div>
+                        </div>
+                        <h5 class="bold mt-2">You have 120 days to repay us the balance plus our fee.</h5>
+
+                    </div>
+                    <div class=" tf-col-4">
+                        <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                            <div class="tf-number-two">
+                                <h2 class="text-white bold mb-0">4</h2>
+                            </div>
+                            <div class="tf-number-two-step w-100 text-center">
+                                <h3 class="bold mb-0">GOODS SENT</h3>
+                            </div>
+                        </div>
+                        <h5 class="bold mt-2">The supplier sends you the goods</h5>
+
+                    </div>
+
+                </div>
+                <div class="mt-5  wfc ms-auto contact-join-team text-center position-relative ">
+                    <button type="button" class="btn bg-0ECCCA btn-custom  text-white px-4 py-2 ttu bold">
+                        GET A QUOTE</button>
+                    <img class="btn-custom-eclipse" src="./assets/images/trade-finance-last-cir.png" alt="" srcset="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="tf-sec-for-tab">
+
+        <div class="container-lg tf-second-row-steps">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="tf-col-1 mb-3">
+                    <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                        <div class="tf-number-one">
+                            <h2 class="text-white bold mb-0">1</h2>
+                        </div>
+                        <div class="tf-number-one-step">
+                            <h3 class="bold pe-lg-5 text-center w-100 mb-0">ORDER PLACED</h3>
+                        </div>
+                    </div>
+                    <h5 class="bold mt-2">Your business placed an order with a supplier we've approved.</h5>
+
+                </div>
+                <div class="tf-col-2 mb-3">
+                    <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                        <div class="tf-number-two">
+                            <h2 class="text-white bold mb-0">2</h2>
+                        </div>
+                        <div class="tf-number-two-step text-center w-100">
+                            <h3 class="bold text-center w-100 mb-0">SUBMIT INVOICE</h3>
+                        </div>
+                    </div>
+                    <p class="bold mt-2">You submit your supplier's invoice</p>
+
+                </div>
+                <div class="tf-col-3 mb-3">
+                    <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                        <div class="tf-number-one">
+                            <h2 class="text-white bold mb-0">3</h2>
+                        </div>
+                        <div class="tf-number-one-step">
+                            <h3 class="bold text-center w-100 mb-0">SUPLIER PAID</h3>
+                        </div>
+                    </div>
+                    <h5 class="bold mt-2">We pay your supplier through our FX partner.</h5>
+
+                </div>
+                <div class=" tf-col-4 mb-3">
+                    <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                        <div class="tf-number-two">
+                            <h2 class="text-white bold mb-0">4</h2>
+                        </div>
+                        <div class="tf-number-two-step text-center w-100">
+                            <h3 class="bold  mb-0">GOODS SENT</h3>
+                        </div>
+                    </div>
+                    <h5 class="bold mt-2">The supplier sends you the goods</h5>
+
+                </div>
+                <div class="tf-col-5">
+                    <div class="tf-stp-two d-flex align-items-center justify-content-between bg-white">
+                        <div class="tf-number-one">
+                            <h2 class="text-white bold mb-0">5</h2>
+                        </div>
+                        <div class="tf-number-one-step">
+                            <h3 class="bold text-center w-100 mb-0">YOU REPAY US</h3>
+                        </div>
+                    </div>
+                    <h5 class="bold mt-2">You have 120 days to repay us the balance plus our fee.</h5>
+
+                </div>
+            </div>
+            <div class="my-5  wfc m-auto contact-join-team text-center position-relative ">
+                <button type="button" class="btn bg-0ECCCA btn-custom  text-white px-4 py-2 ttu bold">
+                    GET A QUOTE</button>
+                <img class="btn-custom-eclipse" src="./assets/images/blue-yellow.png" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+    <!-- Trade Finance page End -->
+
+
+
+    <!-- Footer -->
+    <footer class="">
+        <img src="./assets/images/footer-logo.png" class="footer-logo" alt="" srcset="">
+        <div class="d-flex flex-wrap footer-row justify-content-between mt-4">
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">BUSINESS</h5>
+                <div class="pt-4">
+                    <h5 class=" mb-0 bold ">SOLUTIONS</h5>
+                    <a  class="text-000" href="./invoice-finance.html" class="tdn">
+                        <h5 class="regular mb-0">Invoice Finance</h5>
+                    </a>
+                    <a class="text-000" href="./tradefinace.html" class="tdn">
+                        <h5 class="regular mb-0">Trade Finance</h5>
+                    </a>
+                    <a class="text-000" href="./credit-control.html" class="tdn">
+                        <h5 class="regular mb-0">Credit Control</h5>
+                    </a>
+                </div>
+                <div class="pt-4">
+                    <h5  class=" mb-0 bold ">TECHNOLOGY</h5>
+                    <h5 class="regular mb-0">Portal Name?</h5>
+                    <a  class="text-000" href="./cashflow.html" class="tdn">
+                        <h5 class="regular mb-0">Cash Flow</h5>
+                    </a>
+                    <h5 class="regular mb-0">Management App</h5>
+                </div>
+                <div class="pt-4">
+                    <h5 class=" mb-0 bold ">PARTNERSHIP</h5>
+                    <h5 class="regular mb-0">Startups</h5>
+                    <h5 class="regular mb-0">Brokers</h5>
+                    <h5 class="regular mb-0">Accountants</h5>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">COMPANY</h5>
+                <a href="./about.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-4 ">ABOUT US</h5>
+                </a>
+                <a href="./Careerdatabase.html" class="tdn">
+
+                    <h5 class=" mb-0 bold text-000 pt-3 ">CAREERS</h5>
+                </a>
+
+                <h5 class=" mb-0 bold text-000 pt-3 ">LEADERSHIP</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">NEWS</h5>
+                <a href="./contact-us.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-3 ">CONTACT US</h5>
+                </a>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">RESOURCES</h5>
+                <a href="./article.html" class="tdn">
+                    <h5 class=" mb-0 bold text-000 pt-4 ">BLOG</h5>
+                </a>
+                <h5 class=" mb-0 bold text-000 pt-3 ">FAQ</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">GLOASSARY OF TERMS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">OUR CLIENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">LEAVE A REVIEW </h5>
+            </div>
+            <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">LEGALS</h5>
+                <h5 class=" mb-0 bold text-000 pt-4 ">LEGAL DOCUMENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">PRIVACY POLICY</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">COOKIE POLICY</h5>
+                <a href="./investor-relation.html" class="tdn">
+
+                    <h5 class=" mb-0 bold text-000 pt-3 ">INVESTORS RELATIONS</h5>
+                </a>
+
+            </div>
+            <!-- <div class="footer-col">
+                <h5 class="text-713EE4 regular mb-0 bold tdu">LEGALS</h5>
+                <h5 class=" mb-0 bold text-000 pt-4 ">LEGAL DOCUMENTS</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">PRIVACY POLICY</h5>
+                <h5 class=" mb-0 bold text-000 pt-3 ">COOKIE POLICY</h5>
+            </div> -->
+            <div class="footer-col-last">
+                <h5 class=" mb-0 bold text-000">GET OUR MOBILE APP</h5>
+                <div class="d-flex pt-4">
+                    <img src="./assets/images/appstore.png" alt="" srcset="">
+                    <img class="ps-3" src="./assets/images/googleplay.png" alt="" srcset="">
+                </div>
+                <div class="pt-5 d-flex">
+                    <img src="./assets/images/linkedin.png" alt="" height="34" srcset="">
+                    <img src="./assets/images/twitter.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/instagram.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/facebook.png" class="ps-3" alt="" height="34" srcset="">
+                    <img src="./assets/images/youtube.png" class="ps-3" alt="" height="34" srcset="">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+</body>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/global.js"></script>
+
+</html>

@@ -47,18 +47,39 @@ input {
     text-transform: uppercase;
 }
 
+.wfc {
+    width: fit-content;
+}
+
 /* Text Related Css */
 /* color css */
 .text-713EE4 {
     color: #713EE4;
 }
 
+.text-blue {
+    color: #0ECCCA;
+}
+
 .text-3D3D3D {
     color: #3D3D3D;
 }
 
+.cp {
+    cursor: pointer;
+}
+
 .bg-713EE4 {
     background-color: #713EE4;
+}
+
+.btn-purple {
+    background-color: #713EE4;
+    border: 1px solid #713EE4;
+}
+
+button:focus {
+    box-shadow: none !important;
 }
 
 .bg-0ECCCA {
@@ -68,6 +89,7 @@ input {
 .text-000 {
     color: #000;
 }
+
 .nav-menu li a:hover {
     color: #0ECCCA;
     transition: .2s ease-in-out;
@@ -387,89 +409,444 @@ body {
 
 /* news page css  */
 /* news-banner */
-.news-banner{
+.news-banner {
     padding: 101px 15px;
     background: linear-gradient(90deg, #0ECCCA 0%, #713EE4 100%);
     position: relative;
 }
-.news-left-circle{
+
+.news-left-circle {
     position: absolute;
     left: 0;
     top: 20px;
 }
-.news-right-circle{
+
+.news-right-circle {
     position: absolute;
     right: 0;
     bottom: -38px;
 }
-.color{
-    color:  #FBFBFB;
+
+.color {
+    color: #FBFBFB;
 }
-.news-banner h1{
+
+.news-banner h1 {
     text-transform: uppercase;
 }
-.news-banner .paragraph{
+
+.news-banner .paragraph {
     font-weight: 400;
-font-size: 20px;
-line-height: 25px;
-padding: 31px 0px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 31px 0px;
 }
-.buttons-group{
+
+.buttons-group {
     padding-top: 41px;
 }
-.buttons-group .purple{
+
+.buttons-group .purple {
     background-color: #713EE4;
     border: #713EE4;
 }
+
 /* news-banner */
 
 /*News  cards */
-.news-card{
+.news-card {
     padding: 0px 80px;
     margin-top: -42px;
     position: relative;
 }
-.card{
+
+.card {
     border: none;
     box-shadow: 0px 2.98909px 2.98909px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
 }
-.card-title{
-font-size: 20px;
-line-height: 24px;
-color: #000000;
+
+.card-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
 }
-.card-button .purple{
+
+.card-button .purple {
     background-color: #713EE4;
     border: #713EE4;
-    padding: 0px 9px ;
+    padding: 0px 9px;
     margin: 10px;
 }
-.card-text{
+
+.card-text {
     color: #000000;
     width: 88%;
 }
-.date{
+
+.date {
     margin: 10px 57px 0px 0px;
 }
-.news-left-yellow-circle{
+
+.news-left-yellow-circle {
     position: absolute;
     bottom: 430px;
     left: -12px;
 }
-.news-right-p-circle img{
+
+.news-right-p-circle img {
     position: absolute;
     right: 0px;
     bottom: -38px;
 }
-.card-img-top{
+
+.card-img-top {
     border-radius: 4px 4px 0px 0px;
 }
+
+.modal-bg {
+    padding: 120px 185px;
+    background: rgba(251, 251, 251, 0.9);
+    /* Modal Blur */
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 4px;
+}
+
 /*News  cards */
 /* news page css  */
 
+/* Investor Relation Css */
+
+/* Investor Relation CSS */
+.IR-value-heading {
+    font-family: MontserratRegular;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.IR-Agility-btn-one {
+    background-color: transparent;
+    padding: 10px 70px 10px 70px;
+    color: #2E2E2E;
+    font-weight: 700;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #0ECCCA, #713EE4) border-box;
+    border-radius: 35px;
+    border: 5px solid transparent;
+    font-size: 24px;
+}
+
+.IR-Agility-btn {
+    background-color: transparent;
+    padding: 10px 70px 10px 70px;
+    color: #2E2E2E;
+    font-weight: 700;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #0ECCCA, #713EE4) border-box;
+    border-radius: 35px;
+    border: 5px solid transparent;
+    font-size: 24px;
+
+}
+
+.IR-Agility-btn-two {
+    background-color: transparent;
+    padding: 10px 50px 10px 50px;
+    color: #2E2E2E;
+    font-weight: 700;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #0ECCCA, #713EE4) border-box;
+    border-radius: 35px;
+    border: 5px solid transparent;
+    font-size: 24px;
+}
+
+.IR-text {
+    font-family: SourceSansPro-Regular;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3D3D3D;
+    text-align: center;
+}
+
+.IR-bg-img {
+    position: absolute;
+    left: 456px;
+    top: 215px;
+    z-index: -1;
+}
+
+.IR-founder-name {
+    font-family: SourceSansPro-Regular;
+    color: #1E1E1E;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.IR-founder-section {
+    margin-top: 100px;
+}
+
+.IR-Mouse-story-heading {
+    font-family: MontserratRegular;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.IR-Mouse-story-text {
+    font-weight: 400;
+    font-size: 21.6px;
+    font-family: MontserratRegular;
+    color: #000000;
+}
+
+.our-value-col {
+    text-align: center;
+}
+
+/* Investor Relation Css */
+
+/* MODALS CSS */
+.modals-details {
+    margin-top: 77px;
+}
+
+/* MODALS CSS */
 
 /* Footer */
+/* Career Database */
+
+/* Career Database CSS  Start*/
+.career-database-banner {
+    background-image: linear-gradient(to right, #0ECCCA, #713EE4);
+}
+
+.career-database-banner-two {
+    background-image: linear-gradient(to right, #0ECCCA, #713EE4);
+}
+
+.career-heading {
+    font-size: 40px;
+    font-family: Montserratextrabold;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 90px;
+    color: #FBFBFB;
+}
+
+.career-database-left-banner-pic {
+    text-align: end;
+}
+
+.career-database-right-banner-pic {
+    text-align: start;
+}
+
+.career-finance-heading {
+    font-family: SourceSansPro-Regular;
+    font-weight: 900;
+    color: #FBFBFB;
+
+}
+
+.career-finance-text {
+    font-size: 20px;
+    color: #FBFBFB;
+}
+
+.career-banner-left {
+    text-align: left;
+}
+
+.career-finance-text-two {
+    font-size: 20px;
+    color: #FBFBFB;
+}
+
+.career-finance-heading-two {
+    font-family: SourceSansPro-Regular;
+    font-weight: 900;
+    color: #FBFBFB;
+}
+
+.career-db-pic-one {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+}
+
+.career-db-pic-two {
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+
+.career-db-pic-three {
+    position: absolute;
+    left: 0px;
+    top: 1125px;
+
+}
+
+.career-db-pic-four {
+    position: absolute;
+    right: 250px;
+    z-index: -1;
+}
+
+.career-db-pic-five {
+    position: absolute;
+    left: 80px;
+    z-index: -1;
+}
+
+.career-db-pic-six {
+    position: absolute;
+    right: 110px;
+    z-index: -1;
+
+}
+
+.job-vancency-section {
+    margin-top: 90px;
+    padding-bottom: 95px;
+}
+
+.cd-our-value-heading {
+    font-family: MontserratRegular;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.cd-opration-heading {
+    font-family: MontserratRegular;
+    font-weight: 700;
+}
+
+.office-assistance-col {
+    background-color: #0ECCCA;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+}
+
+.office-assistance-col-right {
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+}
+
+.office-assistance-heading {
+    color: #FBFBFB;
+    font-family: MontserratRegular;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.office-assistance-heading-two {
+    color: #000000;
+    font-family: MontserratRegular;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.cd-london-heading {
+    font-family: SourceSansPro-Regular;
+    color: #713EE4;
+    font-weight: 700;
+}
+
+.operation-text {
+    font-family: SourceSansPro-Regular;
+    color: #FBFBFB;
+}
+
+.operation-text-two {
+    font-family: SourceSansPro-Regular;
+    color: #000000;
+}
+
+.cd-learn-more-btn {
+    background-color: #713EE4;
+    padding: 8px 30px 8px 30px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.cd-learn-more-btn-two {
+    background-color: #0ECCCA;
+    padding: 8px 30px 8px 30px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.cd-technology-heading {
+    font-family: MontserratRegular;
+    font-weight: 700;
+}
+
+.cd-technology-section {
+    margin-top: 6.5rem;
+    margin-bottom: 6rem;
+}
+
+.technology-col-left {
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+}
+
+.tech-col-right {
+    background-color: #713EE4;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+}
+
+.cd-london-heading-two {
+    font-family: SourceSansPro-Regular;
+    color: #0ECCCA;
+    font-weight: 700;
+}
+
+.cd-london-heading-three {
+    font-family: SourceSansPro-Regular;
+    color: #713EE4;
+    font-weight: 700;
+}
+
+.cd-row-two {
+    padding-bottom: 5rem;
+}
+
+/* Career Database */
 footer {
     background: #EBEBEB;
     padding: 43px 79px;
@@ -484,8 +861,219 @@ footer {
     font-size: 17px;
 }
 
-/* Footer */
+footer a {
+    text-decoration: none;
+}
 
+/* Footer */
+/* Solution IC CSS Start */
+
+.SI-credit-control-heading {
+    font-family: Montserratextrabold;
+    text-transform: uppercase;
+    margin: 5rem 5rem;
+    /* margin-top: 50px; */
+}
+
+.SI-credit-control-heading-two {
+    font-size: 32px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.SI-text {
+    color: #000000;
+    font-size: 20px;
+}
+
+.Si-list {
+    font-size: 28px;
+    color: #000000;
+}
+
+.Si-btn {
+    background-color: #0ECCCA;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+}
+
+.our-invoice-section {
+    background-image: linear-gradient(to right, #0ECCCA, #713EE4);
+
+}
+
+.Si-invoice-heading {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.Si-main-list {
+    margin-top: 40px;
+}
+
+.Si-list-two {
+    color: #000000;
+}
+
+.si-process-heading {
+    color: #000000;
+}
+
+.SI-circle-img-one {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 140px;
+}
+
+.SI-circle-img-two {
+    position: absolute;
+    right: 0;
+    z-index: -2;
+    top: 260px;
+}
+
+.SI-circle-img-three {
+    position: absolute;
+    left: 0;
+    top: -125px;
+}
+
+.SI-circle-img-four {
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+}
+
+.SI-circle-img-five {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.solutionic-section-4-cc img {
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    z-index: -1;
+}
+
+/* Solution Cash Flow Page Css  */
+
+/* Cash Flow Management  */
+.cash-flow {
+    padding: 101px 0px;
+    position: relative;
+}
+
+.cash-right-p {
+    position: absolute;
+    top: 20px;
+}
+
+.cash-h1 {
+    color: #000000;
+}
+
+.cash-padding {
+    padding: 132px 47px 15px;
+}
+
+.cash-h2 {
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.cash-para {
+    font-size: 21.6px;
+    line-height: 26px;
+    color: #000000;
+    padding-top: 62px;
+    width: 90%;
+}
+
+.cash-left-z {
+    position: absolute;
+    right: 0;
+    top: 190px;
+}
+
+/* Cash Flow Management */
+
+/* Cash Flow Mobile  */
+.cash-flow-mobile {
+    background: linear-gradient(90deg, #0eccca 0%, #713ee4 100%);
+    padding: 60px 84px 60px 0px;
+    position: relative;
+}
+
+.cash-yellow-circle {
+    position: absolute;
+    left: 55px;
+    top: 4px;
+}
+
+.cash-top {
+    padding-top: 120px;
+    width: 45%;
+}
+
+.cash-mobile-h1 {
+    font-size: 32px;
+    line-height: 39px;
+    color: #fbfbfb;
+}
+
+.cash-mobile-para {
+    font-size: 20px;
+    line-height: 25px;
+    color: #fbfbfb;
+    padding-top: 35px;
+}
+
+.cash-mobile-h4 {
+    color: #fbfbfb;
+}
+
+.cash-bold-circle-half {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+}
+
+.cash-mobile {
+    z-index: 2;
+}
+
+.blod-card a {
+    text-decoration: none;
+}
+
+.contact-join-team img {
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    z-index: -1;
+}
+
+.contact-join-team-2 img {
+    position: absolute;
+    top: 0px;
+    right: -55px;
+    z-index: -1;
+
+}
+
+.contact-join-team,
+.contact-join-team-2 {
+    z-index: +9;
+}
+
+/* Cash Flow Mobile  */
 /* MEDIA QUERY  */
 
 @media only screen and (max-width: 992px) {
@@ -528,24 +1116,112 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    .news-left-circle img{
-        height: 90px ;
-    }.news-left-circle{
-        position: absolute ;
-        top: 12px ;
-    }.news-right-circle{
-        position: absolute ;
-        bottom: -26px ;
-    }.news-right-circle img{
-        height: 160px ;
-    }.news-banner{
-        padding: 70px 33px ;
-    }.news-banner .paragraph{
-        padding: 0px 0px ;
-    }.buttons-group{
-        padding-top: 25px ;
-    }.news-right-p-circle img {
+
+    .news-left-circle img {
+        height: 90px;
+    }
+
+    .news-left-circle {
+        position: absolute;
+        top: 12px;
+    }
+
+    .news-right-circle {
+        position: absolute;
+        bottom: -26px;
+    }
+
+    .news-right-circle img {
+        height: 160px;
+    }
+
+    .news-banner {
+        padding: 70px 33px;
+    }
+
+    .news-banner .paragraph {
+        padding: 0px 0px;
+    }
+
+    .buttons-group {
+        padding-top: 25px;
+    }
+
+    .news-right-p-circle img {
         height: 110px;
+    }
+
+    .cash-flow {
+        padding: 50px 0px;
+    }
+
+    .cash-padding {
+        padding: 50px 0px 15px;
+    }
+
+    .cash-mobile img {
+        width: 100%;
+    }
+
+    .cash-laptop img {
+        width: 90%;
+    }
+
+    .cash-p-l {
+        padding-left: 33px;
+    }
+
+    .cash-h2 {
+        line-height: 30px;
+    }
+
+    .cash-para {
+        line-height: 24px;
+    }
+
+    .cash-mobile-scanner img {
+        width: 90%;
+    }
+
+    .cash-para {
+        font-weight: 400;
+        font-size: 18.6px;
+        line-height: 24px;
+        color: #000000;
+        padding-top: 25px;
+        width: 90%;
+    }
+
+    .cash-left-z {
+        top: 90px;
+    }
+
+    .cash-left-z img {
+        height: 125px;
+    }
+
+    .cash-right-p img {
+        height: 90px;
+    }
+
+    .cash-right-p {
+        top: 10px;
+    }
+
+    .cash-bold-circle-half img {
+        height: 110px;
+    }
+
+    .cash-yellow-circle img {
+        height: 105px;
+    }
+
+    .cash-yellow-circle {
+        left: 20px;
+    }
+
+    .cash-flow-mobile {
+        padding: 98px 0px 98px 0;
     }
 }
 
@@ -608,7 +1284,7 @@ footer {
     .home-section-5 {
         margin-top: 108px;
     }
-    
+
     .cash-flow-left-col {
         width: 45%;
         padding-right: 30px;
@@ -621,16 +1297,20 @@ footer {
         right: -44px;
         top: 16px;
     }
-    .invoice-finance-row button , .home-section-4-row button{
+
+    .invoice-finance-row button,
+    .home-section-4-row button {
         margin-top: 5rem !important;
     }
-    .home-section-4-row button{
+
+    .home-section-4-row button {
         margin-left: 58px;
     }
+
     .seamless-solution-col {
         width: 85%;
     }
-    
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -639,10 +1319,12 @@ footer {
         font-size: 30px;
         max-width: 603px;
     }
+
     .home-section-4 .credit-control-home {
         width: 100px;
         bottom: -78px;
     }
+
     .credit-control-image {
         width: 100%;
     }
@@ -675,23 +1357,29 @@ footer {
     .home-section-3 {
         padding: 50px 15px;
     }
+
     .home-section-5 {
         margin-top: 108px;
     }
+
     .home-section-4 {
         padding: 0 25px;
     }
+
     .credit-control-right-col {
-        width: 53%;
+        width: 45%;
         padding-left: 65px;
     }
+
     .cash-flow-left-col {
         width: 50%;
         padding-right: 70px;
     }
+
     .cash-flow-right-col {
         width: 50%;
     }
+
     .home-section-5 {
         padding: 0 56px 0 18px;
     }
@@ -710,6 +1398,10 @@ footer {
         margin-top: 30px;
     }
 
+    .modal-dialog {
+        max-width: 88%;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -717,9 +1409,25 @@ footer {
         max-width: 49%;
         flex: 0 0 49%;
     }
+.circle_about{
+    display: none;
+}
+    .modal-bg {
+        padding: 59px 20px !important;
+    }
+
+    .modal-body h1 {
+        font-size: 28px;
+    }
+
+    .modal-body h2 {
+        font-size: 20px;
+    }
+
     .home-last-sec {
         padding: 76px 15px;
     }
+
     .footer-col {
         margin-bottom: 20px;
     }
@@ -740,141 +1448,575 @@ footer {
     .seamless-solution {
         width: 100%;
     }
+
     .home-section-1 {
         font-size: 23px;
         padding: 0 10px;
         margin-top: 46px;
     }
+
     .home-section-1 h1 {
         font-size: 24px;
     }
+
     .home-section-2 {
         padding: 128px 15px 128px 0;
-    }  
+    }
+
     .home-section-2 .home-section-2-inner {
         padding: 53px 25px;
         max-width: 97%;
-    }  
+    }
+
     .home-section-2 .purple-eclipse {
         top: -69px;
         width: 75px;
     }
-   
+
     .afterheadereclipse {
         width: 112px;
     }
+
     .home-section-2 {
         padding: 65px 15px 65px 0;
     }
+
     .home-section-3 .purple-eclipse-right {
         top: -55px;
         width: 68px;
         z-index: -1;
     }
+
     .home-section-3 {
         padding: 85px 15px;
     }
+
     .seamless-solution-col {
         width: 100%;
     }
+
     .seamless-solution-col {
         width: 100%;
     }
+
     .home-section-4 {
         margin-top: 66px;
         padding: 0 15px;
     }
+
     .credit-control-right-col {
         width: 100%;
     }
+
     .credit-control-left-col {
         width: 100%;
     }
+
     .home-section-5 {
         margin-top: 54px;
     }
+
     .home-section-5 {
         padding: 0 15px 0 15px;
     }
+
     .cash-flow-left-col {
         width: 100%;
     }
-    
+
     .cash-flow-left-col {
         width: 100%;
         padding-right: 15px;
-    
+
+    }
+
+    .cash-flow-right-col {
+        width: 100%;
+    }
+
+    .home-section-5 .d-flex {
+        flex-direction: column-reverse;
+    }
+
+    .home-section-4 .credit-control-home {
+        display: none;
+    }
+
+    .cash-flow-right-col,
+    .cash-flow-left-col,
+    .credit-control-right-col {
+        margin-top: 56px;
+    }
+
+    .home-section-2-inner img {
+        position: absolute;
+        right: -15px;
+        top: -78px;
+    }
+
+    .home-last-sec .half-right-blue {
+        position: absolute;
+        bottom: -57px;
+        right: 0;
+        width: 84px;
+    }
+
+    .logos-home-last-sec img {
+        width: 100%;
+    }
+
+    .home-last-sec .half-left-yellow {
+        position: absolute;
+        top: -62px;
+        left: 0;
+        width: 62px;
+    }
+
+    .home-section-2-inner form {
+        margin-top: 20px;
+    }
+
+    .home-section-3 .invoice-finance-row {
+        margin-top: 20px;
+    }
+
+    .home-section-4 .credit-left-circle {
+        position: absolute;
+        left: -62px;
+        top: -51px;
+        z-index: -1;
+        width: 157px;
+    }
+
+    .news-left-circle {
+        top: 8px;
+        position: absolute;
+    }
+
+    .news-left-circle img {
+        height: 78px;
+    }
+
+    .news-right-circle {
+        position: absolute;
+        bottom: -23px;
+    }
+
+    .news-right-circle img {
+        height: 145px;
+    }
+
+    .card-text {
+        width: 100%;
+    }
+
+    .news-banner .paragraph {
+        padding: 10px;
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .buttons-group {
+        padding-top: 10px;
+    }
+
+    .news-banner {
+        padding: 83px 15px;
+    }
+
+    .news-right-p-circle img {
+        height: 75px;
+    }
+
+    .invoice-finance-row button {
+        margin-top: 5rem;
+    }
+
+    .home-section-4-row button {
+        margin-top: 3rem;
+        margin-left: 60px;
+
+    }
+
+    /* Investor Relation Css Media Queries */
+    .IR-bg-img {
+        display: none;
+    }
+
+    .IR-founder-name {
+        text-align: end;
+    }
+
+    .IR-Agility-btn {
+        padding: 7px 45px 7px 45px;
+        font-size: 18px;
+    }
+
+
+    .IR-Agility-btn-one {
+        padding: 7px 55px 7px 55px;
+        font-size: 18px;
+    }
+
+
+    .IR-Agility-btn-two {
+
+        padding: 7px 20px 7px 20px;
+        font-size: 18px;
+    }
+
+    .our-value-col,
+    .IR-text {
+        text-align: start;
+        font-size: 17px;
+    }
+
+    .IR-Mouse-story-text {
+        font-size: 17px;
+    }
+
+    .IR-founder-section {
+        margin-top: 60px;
+    }
+
+    /* Investor Relation Css Media Queries */
+    .career-db-pic-one {
+        display: none;
+    }
+
+    .career-db-pic-two {
+        display: none;
+    }
+
+    .career-heading {
+        font-size: 26px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+    }
+
+    .career-finance-text {
+        font-size: 16px;
+        color: #FBFBFB;
+    }
+
+    .career-finance-heading {
+
+        font-size: 22px;
+    }
+
+    .cd-row-two {
+        flex-direction: column-reverse;
+    }
+
+    .career-finance-heading-two {
+        font-size: 22px;
+    }
+
+    .career-finance-text-two {
+        font-size: 16px;
+
+    }
+
+    .career-db-pic-three {
+        display: none;
+    }
+
+    .career-db-pic-four {
+        display: none;
+    }
+
+    .career-db-pic-five {
+        display: none;
+    }
+
+    .cd-our-value-heading {
+
+        margin-bottom: 40px;
+    }
+
+    .cd-technology-section {
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .career-db-pic-six {
+        position: absolute;
+        right: 10px;
+        z-index: -1;
+
+    }
+
+    .cd-row-two {
+        padding-bottom: 2rem;
+    }
+
+    .SI-circle-img-one {
+
+        /*  width: 28%; */
+
+        top: 97px;
+    }
+
+    .SI-credit-control-heading {
+        margin: 3rem 1rem;
+        font-size: 27px;
+    }
+
+    .SI-credit-control-heading-two {
+        font-size: 26px !important;
+    }
+
+    .Si-list {
+        font-family: MontserratRegular;
+        font-size: 16px;
+    }
+
+    .SI-circle-img-three {
+        display: none;
+    }
+
+    .SI-circle-img-four {
+        position: absolute;
+        right: 0;
+        width: 15%;
+        bottom: -42px;
+    }
+
+    .Si-list-two {
+        font-size: 18px;
+    }
+
+    .SI-circle-img-two {
+        position: absolute;
+        right: 0;
+        z-index: -2;
+        width: 28%;
+        top: 384px;
+    }
+
+    .SI-circle-img-five {
+        position: absolute;
+        left: 0;
+        top: 134px;
+        width: 11%;
+    }
+
+    .sol-credit-control {
+        margin-top: 7rem;
+    }
+
+    .cash-flow {
+        padding: 30px 0px;
+    }
+
+    .cash-h1 {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .cash-para {
+        width: 100%;
+        text-align: center;
+        line-height: 17px;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .cash-h2 {
+        font-size: 22px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .cash-padding {
+        padding: 18px 0px 15px;
+    }
+
+    .cash-top {
+        width: 96%;
+        padding-left: 0px;
+        padding-top: 10px;
+        z-index: 2;
+    }
+
+    .cash-flow-mobile {
+        padding: 20px 0px;
+    }
+
+    .cash-mobile-h1 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .cash-mobile-para {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .cash-mobile-scanner img {
+        width: 80%;
+    }
+
+    .cash-p-l {
+        padding-left: 0px;
+    }
+
+    .cash-flow-mobile .row {
+        flex-direction: column-reverse;
+    }
+
+    .cash-left-z {
+        top: 70px;
+        z-index: -1;
+    }
+
+    .cash-left-z img {
+        height: 90px;
+    }
+
+    .cash-right-p img {
+        height: 60px;
+    }
+
+    .cash-right-p {
+        top: 3px;
+        z-index: -1;
+    }
+
+    .cash-bold-circle-half img {
+        height: 80px;
+    }
+
+    .cash-yellow-circle img {
+        height: 70px;
+    }
+
+    .cash-yellow-circle {
+
+        left: 0px;
+        top: -91px;
+
+    }
+
+    .cash-bold-circle-half {
+        bottom: -22px;
+    }
+
+    .cash-top {
+        width: 100% !important;
+    }
 }
-.cash-flow-right-col {
-    width: 100%;
+
+/* Investor Relation Css Media Queries */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+    .IR-bg-img {
+        display: none;
+    }
+
+    .IR-founder-name {
+        text-align: end;
+    }
+
+    .IR-Agility-btn {
+        padding: 7px 60px 7px 60px;
+        font-size: 18px
+    }
+
+
+    .IR-Agility-btn-one {
+        padding: 7px 70px 7px 70px;
+        font-size: 18px
+    }
+
+
+    .IR-Agility-btn-two {
+        padding: 7px 35px 7px 35px;
+        font-size: 18px;
+    }
+
+    .our-value-col,
+    .IR-text {
+        text-align: start;
+        font-size: 17px;
+    }
+
+    .IR-Mouse-story-text {
+        font-size: 17px;
+    }
+
+    .IR-founder-section {
+        margin-top: 60px;
+    }
+
+    .cd-resp-banner-img {
+        text-align: center;
+    }
+
+    .career-heading {
+        font-size: 26px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .career-db-pic-five {
+        position: absolute;
+        left: 5px;
+        z-index: -1;
+    }
+
+    .career-db-pic-one {
+        position: absolute;
+        left: 10px;
+        top: 90px;
+        width: 10%;
+    }
+
+    .career-db-pic-four {
+        position: absolute;
+        right: 123px;
+        z-index: -1;
+    }
+
+    .career-db-pic-two {
+        position: absolute;
+        right: 0;
+        top: 108px;
+        width: 7%;
+    }
+
+    .career-finance-text {
+        font-size: 18px;
+        color: #FBFBFB;
+    }
+
+    .career-db-pic-three {
+        display: none;
+    }
+
+    .cd-resp-badnner-img {
+        text-align: center;
+    }
+
+    .cd-row-two {
+        padding-bottom: 2rem;
+    }
+
+    .career-db-pic-six {
+        position: absolute;
+        right: 35px;
+        z-index: -1;
+    }
 }
-.home-section-5 .d-flex {
-    flex-direction: column-reverse;
-}
-.home-section-4 .credit-control-home {
-    display: none;
-}
-.cash-flow-right-col ,.cash-flow-left-col,.credit-control-right-col{
-    margin-top: 56px;
-}
-.home-section-2-inner img {
-    position: absolute;
-    right: -15px;
-    top: 16px;
-}
-.home-last-sec .half-right-blue {
-    position: absolute;
-    bottom: -57px;
-    right: 0;
-    width: 84px;
-}
-.logos-home-last-sec img {
-    width: 100%;
-}
-.home-last-sec .half-left-yellow {
-    position: absolute;
-    top: -62px;
-    left: 0;
-    width: 62px;
-}
-.home-section-2-inner form {
-    margin-top: 20px;
-}
-.home-section-3 .invoice-finance-row {
-    margin-top: 20px;
-}
-.home-section-4 .credit-left-circle {
-    position: absolute;
-    left: -62px;
-    top: -51px;
-    z-index: -1;
-    width: 157px;
-}
-.news-left-circle{
-    top: 8px ;
-    position: absolute ;
-}
-.news-left-circle img{
-    height: 78px ;
-}.news-right-circle{
-    position: absolute ;
-    bottom: -23px ;
-}.news-right-circle img{
-    height: 145px ;
-}.card-text{
-    width: 100% ;
-}.news-banner .paragraph{
-    padding: 10px ;
-    line-height: 20px ;
-    font-size: 18px ;
-}.buttons-group {
-    padding-top: 10px ;
-}.news-banner{
-    padding: 83px 15px;
-}.news-right-p-circle img {
-    height: 75px;
-}
-}
+
+/* Investor Relation Css Media Queries */
+
+/* Investor Relation CSS END */
 @media only screen and (max-width: 1200px) {
     .navbar {
         display: flex;
@@ -894,11 +2036,123 @@ footer {
     .footer-col h5 {
         font-size: 16px;
     }
+
     .news-card {
-        padding: 0px 15px ;
-        margin-top: 42px ;
+        padding: 0px 15px;
+        margin-top: 42px;
+    }
+
+    .modal-bg {
+        padding: 120px 55px;
+
+    }
+
+    .cash-laptop img {
+        width: 100%;
+    }
+
+    .cash-para {
+        width: 100%;
+    }
+
+    .cash-mobile {
+        text-align: center;
+    }
+
+    .cash-mobile img {
+        width: 100%;
+    }
+
+    .cash-top {
+        padding-top: 50px;
+    }
+
+    .cash-left-z img {
+        height: 155px;
+    }
+
+    .cash-right-p img {
+        height: 115px;
+    }
+
+    .cash-yellow-circle img {
+        height: 135px;
+    }
+
+    .cash-bold-circle-half {
+        bottom: -33px;
+    }
+
+    .cash-bold-circle-half img {
+        height: 145px;
     }
 }
 
+@media only screen and (min-width: 1700px) and (max-width: 1920px) {
+
+    .career-db-pic-three {
+        position: absolute;
+        left: 0px;
+        top: 1175px;
+    }
+
+    .career-db-pic-four {
+        position: absolute;
+        right: 452px;
+        z-index: -1;
+    }
+
+    .career-db-pic-five {
+        position: absolute;
+        left: 232px;
+        z-index: -1;
+    }
+
+    .career-db-pic-six {
+        position: absolute;
+        right: 272px;
+        z-index: -1;
+    }
+}
+
+/* Extraaaaa Large Screen View  */
+@media only screen and (min-width: 1600px) {
+    .cash-padding {
+        padding: 132px 150px 15px;
+    }
+
+    .cash-para {
+        width: 79%;
+    }
+}
+
+/* Extra Large Screen View  */
+@media only screen and (max-width: 1440px) {
+    .cash-padding {
+        padding: 132px 0px 15px 47px;
+    }
+
+    .cash-laptop img {
+        width: 85%;
+    }
+
+    .cash-mobile img {
+        width: 100%;
+    }
+
+    .cash-top {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1300px) {
+    .cash-top {
+        width: 50%;
+    }
+
+    .cash-flow-mobile {
+        padding: 60px 28px 60px 0px;
+    }
+}
 
 /* MEDIA QUERY  */
