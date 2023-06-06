@@ -1488,9 +1488,11 @@ footer a {
     }
 
     .home-section-3 {
-        padding: 85px 15px;
+        padding: 65px 15px;
     }
-
+    .home-last-sec h5{
+        padding-top: 20px;
+        }
     .seamless-solution-col {
         width: 100%;
     }
